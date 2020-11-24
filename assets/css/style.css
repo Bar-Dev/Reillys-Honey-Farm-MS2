@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*------------------------Headings------------------------*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.main-headings {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.submain-headings {
+    text-align: left;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+
+
+/*------------------------Navbar------------------------*/
+
+#navbar-colors {
+    background-color: #b9bea5 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #777777;
+}
+
+.navbar > a > h1 {
+    margin-left: 50vw;
+    transform: translate(-50%);
+    font-family: 'Nerko One', sans-serif;
+}
+
+
+/*------------------------Main Image------------------------*/
+
+.home-video {
+    height: auto;
+    max-width: 100%;
+    margin-top: 80px;
+}
+
+.hero-video-content {
+    height: 700px;
+    overflow: hidden;
+    display: block;
+}
+
+/*------------------------Main Content------------------------*/
+
+.container > h2, .container > h1 {
+    margin-top: 60px;
+}
+
+.location-content {
+    margin-top: 10px;
+}
+
+.location-images {
+    text-align: center;
+}
+
+.location-images > img {
+    width: 80%;
+}
