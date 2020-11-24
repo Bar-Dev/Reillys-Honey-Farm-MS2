@@ -125,9 +125,109 @@
 							</p>
 						</div>
 					</div>
-				</div>
+					
+					<div class="row">
+						<div class="col">
+							<h1 class="main-headings">Map locations</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col map-content">
+							<div id="map"></div>
+						</div>
 
+                    
 
+					</div>
+					</div>
+
+              <!-- ==================== Footer ==================== -->
+
+      <footer class="container-fluid mt-auto">
+         <div id="footer-details" class="row">
+            <div class="col-sm-3 col-md-2 footer-spacing">
+               <h5 class="uppercase general-sub">Contact</h5>
+               <div class="contact-list">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#businessContact">Business</button>
+               </div>
+               <div class="contact-list">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#publicContact" data-whatever="@fat">Public</button>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-6 footer-spacing" id="footer-middle">
+               <h5 class="uppercase general-sub">Download Links</h5>
+               <p class="inline-block" id="bike-shop-list">
+                  Bike Hire Shops <i class="fas fa-long-arrow-alt-right"></i>
+                  <a href="./assets/pdf/bike-hire.pdf" target="_blank" class="pdf-lists">
+                  <i class="fas fa-bicycle" aria-hidden="true"></i>
+                  <span class="sr-only">Download link.</span>
+                  </a>
+               </p>
+               <p id="cafe">
+                  Cafes Dungarvan <i class="fas fa-long-arrow-alt-right"></i>
+                  <a href="./assets/pdf/cafe-list.pdf" target="_blank" class="pdf-lists">
+                  <i class="fas fa-mug-hot" aria-hidden="true"></i>
+                  <span class="sr-only">Download link.</span>
+                  </a>
+               </p>
+            </div>
+            <div class="col-sm-3 col-md-4 footer-spacing" id="footer-right">
+               <h5 class="uppercase general-sub">Social</h5>
+               <div class="row">
+                  <div class="col">
+                     <div class="social-link-spacing">
+                        <ul class="list-inline social-links">
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://www.facebook.com/">
+                              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                              <span class="sr-only">Facebook</span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://twitter.com/?lang=en">
+                              <i class="fab fa-twitter" aria-hidden="true"></i>
+                              <span class="sr-only">Twitter</span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://ie.linkedin.com/">
+                              <i class="fab fa-linkedin" aria-hidden="true"></i>
+                              <span class="sr-only">LinkedIn</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="social-link-spacing">
+                        <ul class="list-inline social-links">
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://www.pinterest.com/">
+                              <i class="fab fa-pinterest" aria-hidden="true"></i>
+                              <span class="sr-only">Pinterest</span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://www.instagram.com/?hl=en">
+                              <i class="fab fa-instagram" aria-hidden="true"></i>
+                              <span class="sr-only">Instagram</span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://www.youtube.com/">
+                              <i class="fab fa-youtube" aria-hidden="true"></i>
+                              <span class="sr-only">YouTube</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABucIRm-f4cvB9n5a7-wE_1aVqEKh1k_0&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
+        
 
 </body>
 
