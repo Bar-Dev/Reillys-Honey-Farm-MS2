@@ -50,6 +50,25 @@ body {
     display: block;
 }
 
+.home-image {
+    height: auto;
+    max-width: 100%;
+    margin-top: 82px;
+
+    animation-name: home-zoom;
+    animation-duration: 8s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes home-zoom {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1.0);
+    }
+}
+
 /*------------------------Main Content------------------------*/
 
 .container > h2, .container > h1 {

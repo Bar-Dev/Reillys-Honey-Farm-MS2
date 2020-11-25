@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Reillys Honey Farm</title>
+</head>
+
+<body>
+	<header>
+
+		<!-- ==================== Navbar ==================== -->
+
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar-colors">
+			<a class="navbar-brand" href="index.html">
+				<h1>Reilly's Honey Farm</h1>
+			</a>
+			<button class="navbar-toggler navbar-lines" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="honey.html">Honey</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#signUpModal">Sign Up</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- ==================== Main Image ==================== -->
+
+<section>
+         <div>
+            <img class="home-image" src="./assets/images/honey-jars.jpg" alt="Jars of Honey">
+         </div>
+      </section>
+
+	<!-- ==================== Main Content ==================== -->
+
+        <div class="container">
+		<h2>How it works:</h2>
+		<br>
+		<ol>
+            <li>Click on your desired location</li>
+            <li>Select the percentage of the Jar you want filled</li>
+            <li>View your Jar below to see when full</li>
+            <li>Proceed to Checkout</li>
+            <li>Enjoy!</li>
+		</ol>
+	</div>
+
+              <!-- ==================== Footer ==================== -->
+
+      <footer class="container-fluid mt-auto">
+         <div id="footer-details" class="row">
+            <div class="col-sm-3 col-md-2 footer-spacing">
+               <h5 class="uppercase general-sub">Contact</h5>
+               <div class="contact-list">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#businessContact">Business</button>
+               </div>
+               <div class="contact-list">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#publicContact" data-whatever="@fat">Public</button>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-6 footer-spacing" id="footer-middle">
+               <h5 class="uppercase general-sub">Download Links</h5>
+               <p class="inline-block" id="bike-shop-list">
+                  Bike Hire Shops <i class="fas fa-long-arrow-alt-right"></i>
+                  <a href="./assets/pdf/bike-hire.pdf" target="_blank" class="pdf-lists">
+                  <i class="fas fa-bicycle" aria-hidden="true"></i>
+                  <span class="sr-only">Download link.</span>
+                  </a>
+               </p>
+               <p id="cafe">
+                  Cafes Dungarvan <i class="fas fa-long-arrow-alt-right"></i>
+                  <a href="./assets/pdf/cafe-list.pdf" target="_blank" class="pdf-lists">
+                  <i class="fas fa-mug-hot" aria-hidden="true"></i>
+                  <span class="sr-only">Download link.</span>
+                  </a>
+               </p>
+            </div>
+            <div class="col-sm-3 col-md-4 footer-spacing" id="footer-right">
+               <h5 class="uppercase general-sub">Social</h5>
+               <div class="row">
+                  <div class="col">
+                     <div class="social-link-spacing">
+                        <ul class="list-inline social-links">
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://www.facebook.com/">
+                              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                              <span class="sr-only">Facebook</span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://twitter.com/?lang=en">
+                              <i class="fab fa-twitter" aria-hidden="true"></i>
+                              <span class="sr-only">Twitter</span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://ie.linkedin.com/">
+                              <i class="fab fa-linkedin" aria-hidden="true"></i>
+                              <span class="sr-only">LinkedIn</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="social-link-spacing">
+                        <ul class="list-inline social-links">
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://www.pinterest.com/">
+                              <i class="fab fa-pinterest" aria-hidden="true"></i>
+                              <span class="sr-only">Pinterest</span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://www.instagram.com/?hl=en">
+                              <i class="fab fa-instagram" aria-hidden="true"></i>
+                              <span class="sr-only">Instagram</span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://www.youtube.com/">
+                              <i class="fab fa-youtube" aria-hidden="true"></i>
+                              <span class="sr-only">YouTube</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABucIRm-f4cvB9n5a7-wE_1aVqEKh1k_0&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
+        
+
+</body>
+
+</html>
