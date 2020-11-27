@@ -21,6 +21,11 @@ body {
 
 /*------------------------Navbar------------------------*/
 
+.bee-nav {
+    left: 10px;
+    position: absolute;
+}
+
 #navbar-colors {
     background-color: #b9bea5 !important;
 }
@@ -109,7 +114,6 @@ div#map {
 .hive-honey-map > img {
     max-width: 90%;
     height: auto;
-    margin-bottom: 100px;
 }
 
 .honey-text {
@@ -130,7 +134,7 @@ div#map {
     left: 50%; 
     z-index: 2;
     max-width: 100%;
-    height: 350px;
+    height: 400px;
     transform: translate(-50%, 0%); 
 }
 
@@ -140,7 +144,7 @@ div#map {
     left: 50%; 
     z-index: 3;
     max-width: 100%;
-    height: 350px;
+    height: 400px;
     transform: translate(-50%, 0%);
 }
 
@@ -150,9 +154,69 @@ div#map {
     left: 50%; 
     z-index: 1;
     max-width: 100%;
-    height: 350px;
+    height: 400px;
     transform: translate(-50%, 0%);
 }
+
+.fade-in {
+animation: fadeIn ease 20s;
+-webkit-animation: fadeIn ease 20s;
+-moz-animation: fadeIn ease 20s;
+-o-animation: fadeIn ease 20s;
+-ms-animation: fadeIn ease 20s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+
+/*------------------------ Hives ------------------------*/
+
+.hive-icons {
+    position: absolute;
+    z-index: 1;
+    width: 2rem;
+    height: 2rem;
+    padding: 4px 0;
+    border-radius: 50%;
+    border: 2px solid #b9bea5; 
+    font-size: 15px;
+    text-align: center;
+    color: #555555;
+    background: #fff;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+#hive-icon-one {
+    left: 50%;
+    bottom: 50%;
+    }
+
+
 
 /*------------------------Footer------------------------*/
 
@@ -232,6 +296,7 @@ footer {
 
 #footer-details {
     padding: 20px;
+    margin-top: 100px;
 }
 
 #footer-middle {
