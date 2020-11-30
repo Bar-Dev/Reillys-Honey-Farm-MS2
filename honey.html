@@ -24,10 +24,10 @@
 
 		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar-colors">
 			<a class="navbar-brand" href="index.html">
-                <div class="bee-nav">
-                <img width="75" height="55" src="./assets/images/honey-bee.png" alt="Honey Bee">
+				<div class="bee-nav">
+					<img width="75" height="55" src="./assets/images/honey-bee.png" alt="Honey Bee">
                 </div>
-				<h1>Reilly's Honey Farm</h1>
+					<h1>Reilly's Honey Farm</h1>
 			</a>
 			<button class="navbar-toggler navbar-lines" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,150 +50,217 @@
 
 	<!-- ==================== Main Image ==================== -->
 
-<section>
-         <div>
-            <img class="home-image" src="./assets/images/honey-jars.jpg" alt="Jars of Honey">
+	<section>
+		<div>
+			<img class="home-image" src="./assets/images/honey-jars.jpg" alt="Jars of Honey">
          </div>
-      </section>
+	</section>
 
 	<!-- ==================== Main Content ==================== -->
 
-        <div class="container">
-            <div class="row honey-content honey-text">
-                <div class="col">
-		<h2>How it works:</h2>
-		<br>
-		<ol>
-            <li>Click on your desired location</li>
-            <li>Select the percentage of the Jar you want filled</li>
-            <li>View your Jar below to see when full</li>
-            <li>Proceed to Checkout</li>
-            <li>Enjoy!</li>
-		</ol>
-		</div>
+	<div class="container">
+		<div class="row honey-content honey-text">
+			<div class="col">
+				<h2>How it works:</h2>
+				<br>
+				<ol>
+					<li>Click on your desired location</li>
+					<li>Select the percentage of the Jar you want filled</li>
+					<li>View your Jar below to see when full</li>
+					<li>Proceed to Checkout</li>
+					<li>Enjoy!</li>
+				</ol>
+			</div>
 		</div>
 		<div class="row honey-content">
 			<div class="col-md-8">
 				<div class="hive-honey-map">
 					<img src="./assets/images/honey-map.png" alt="Honey Map">
 
-                <!--  Test Icon -->
-                    <button id="hive-icon-one" class="hive-icons" type="button" data-toggle="modal"
+					<!--  Test Icon -->
+					<button id="hive-icon-one" class="hive-icons" type="button" data-toggle="modal"
                      data-target="#iconOne">
                   <strong><img width="25" height="25" src="./assets/images/honey-bee.png" alt="Honey Bee"></strong>
                   </button>
-                  
-                  
-                        
-                  
+					<div class="modal fade" id="iconOne" tabindex="-1" role="dialog" aria-labelledby="iconOne"
+						aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								</div>
+								<div class="modal-body">
+									<!-- Indicators -->
+									<div id="modal-icon-one" class="image-style" data-interval="false">
+										<div class="iconImage">
+											<div class="modal-box active">
+												<div class="container-fluid">
+													<div class="row">
+														<div class="col-6">
+															<h2>Modelligo Hives</h2><br>
+															
+															<form>
+																<fieldset>
+																	<legend>How much would you like from here?</legend>
+																	<p>
+																		<label>Select Amount</label>
+																		<select id = "myList">
+															               <option value = "10">10%</option>
+															               <option value = "20">20%</option>
+															               <option value = "30">30%</option>
+															               <option value = "40">40%</option>
+                                                                           <option value = "50">50%</option>
+															               <option value = "60">60%</option>
+															               <option value = "70">70%</option>
+															               <option value = "80">80%</option>
+                                                                           <option value = "90">90%</option>
+															               <option value = "100">100%</option>
+															             </select>
+																	</p>
+																</fieldset>
+                                                                
+															</form>
+															
+															
+															</div>
+														<div class="col-6">
+															<img src="./assets/images/lavender.jpg" class="d-block w-100" alt="Lavender Fields">
 
+                                            </div>
 
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                <!-- End of test icons-->
+						<!-- End of test icons-->
 
-
-
-		        </div>
+					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="honey-jar">
-                        <div class="container">
-						<img class="outer-jar" src="./assets/images/outer-jar.png" alt="Honey Jar">
-                        <img class="inner-jar" src="./assets/images/inner-jar.png" alt="Honey Jar">
-                        <img class="honey fade-in" src="./assets/images/50-full.png" alt="Honey Jar">
+					<div id="honey-jar">
+						<div class="container">
+							<img id="outer-jar" src="./assets/images/outer-jar.png" alt="Honey Jar">
+							<img id="inner-jar" src="./assets/images/inner-jar.png" alt="Honey Jar">
+                            
+                                <div id="honey-fill">
+                                
+                            </div>
+                            <button onclick="fillJar()" data-dismiss="modal" class="jar-btn">Fill Jar</button>
                         </div>
-		        </div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-              <!-- ==================== Footer ==================== -->
+			<!-- ==================== Footer ==================== -->
 
-      <footer class="container-fluid mt-auto">
-         <div id="footer-details" class="row">
-            <div class="col-sm-3 col-md-2 footer-spacing">
-               <h5 class="uppercase general-sub">Contact</h5>
-               <div class="contact-list">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#businessContact">Business</button>
-               </div>
-               <div class="contact-list">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#publicContact" data-whatever="@fat">Public</button>
-               </div>
-            </div>
-            <div class="col-sm-6 col-md-6 footer-spacing" id="footer-middle">
-               <h5 class="uppercase general-sub">Download Links</h5>
-               <p class="inline-block" id="bike-shop-list">
-                  Bike Hire Shops <i class="fas fa-long-arrow-alt-right"></i>
-                  <a href="./assets/pdf/bike-hire.pdf" target="_blank" class="pdf-lists">
-                  <i class="fas fa-bicycle" aria-hidden="true"></i>
-                  <span class="sr-only">Download link.</span>
-                  </a>
-               </p>
-               <p id="cafe">
-                  Cafes Dungarvan <i class="fas fa-long-arrow-alt-right"></i>
-                  <a href="./assets/pdf/cafe-list.pdf" target="_blank" class="pdf-lists">
-                  <i class="fas fa-mug-hot" aria-hidden="true"></i>
-                  <span class="sr-only">Download link.</span>
-                  </a>
-               </p>
-            </div>
-            <div class="col-sm-3 col-md-4 footer-spacing" id="footer-right">
-               <h5 class="uppercase general-sub">Social</h5>
-               <div class="row">
-                  <div class="col">
-                     <div class="social-link-spacing">
-                        <ul class="list-inline social-links">
-                           <li class="list-inline-item">
-                              <a target="_blank" href="https://www.facebook.com/">
-                              <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                              <span class="sr-only">Facebook</span>
-                              </a>
-                           </li>
-                           <li class="list-inline-item">
-                              <a target="_blank" href="https://twitter.com/?lang=en">
-                              <i class="fab fa-twitter" aria-hidden="true"></i>
-                              <span class="sr-only">Twitter</span>
-                              </a>
-                           </li>
-                           <li class="list-inline-item">
-                              <a target="_blank" href="https://ie.linkedin.com/">
-                              <i class="fab fa-linkedin" aria-hidden="true"></i>
-                              <span class="sr-only">LinkedIn</span>
-                              </a>
-                           </li>
-                        </ul>
-                     </div>
-                     <div class="social-link-spacing">
-                        <ul class="list-inline social-links">
-                           <li class="list-inline-item">
-                              <a target="_blank" href="https://www.pinterest.com/">
-                              <i class="fab fa-pinterest" aria-hidden="true"></i>
-                              <span class="sr-only">Pinterest</span>
-                              </a>
-                           </li>
-                           <li class="list-inline-item">
-                              <a target="_blank" href="https://www.instagram.com/?hl=en">
-                              <i class="fab fa-instagram" aria-hidden="true"></i>
-                              <span class="sr-only">Instagram</span>
-                              </a>
-                           </li>
-                           <li class="list-inline-item">
-                              <a target="_blank" href="https://www.youtube.com/">
-                              <i class="fab fa-youtube" aria-hidden="true"></i>
-                              <span class="sr-only">YouTube</span>
-                              </a>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABucIRm-f4cvB9n5a7-wE_1aVqEKh1k_0&callback=initMap"></script>
-    <script src="assets/js/maps.js"></script>
-        
+			<footer class="container-fluid mt-auto">
+				<div id="footer-details" class="row">
+					<div class="col-sm-3 col-md-2 footer-spacing">
+						<h5 class="uppercase general-sub">Contact</h5>
+						<div class="contact-list">
+							<button type="button" class="btn" data-toggle="modal" data-target="#businessContact">Business</button>
+						</div>
+						<div class="contact-list">
+							<button type="button" class="btn" data-toggle="modal" data-target="#publicContact" data-whatever="@fat">Public</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6 footer-spacing" id="footer-middle">
+						<h5 class="uppercase general-sub">Download Links</h5>
+						<p class="inline-block" id="bike-shop-list">
+							Bike Hire Shops <i class="fas fa-long-arrow-alt-right"></i>
+							<a href="./assets/pdf/bike-hire.pdf" target="_blank" class="pdf-lists">
+								<i class="fas fa-bicycle" aria-hidden="true"></i>
+								<span class="sr-only">Download link.</span>
+							</a>
+						</p>
+						<p id="cafe">
+							Cafes Dungarvan <i class="fas fa-long-arrow-alt-right"></i>
+							<a href="./assets/pdf/cafe-list.pdf" target="_blank" class="pdf-lists">
+								<i class="fas fa-mug-hot" aria-hidden="true"></i>
+								<span class="sr-only">Download link.</span>
+							</a>
+						</p>
+					</div>
+					<div class="col-sm-3 col-md-4 footer-spacing" id="footer-right">
+						<h5 class="uppercase general-sub">Social</h5>
+						<div class="row">
+							<div class="col">
+								<div class="social-link-spacing">
+									<ul class="list-inline social-links">
+										<li class="list-inline-item">
+											<a target="_blank" href="https://www.facebook.com/">
+												<i class="fab fa-facebook-f" aria-hidden="true"></i>
+												<span class="sr-only">Facebook</span>
+											</a>
+										</li>
+										<li class="list-inline-item">
+											<a target="_blank" href="https://twitter.com/?lang=en">
+												<i class="fab fa-twitter" aria-hidden="true"></i>
+												<span class="sr-only">Twitter</span>
+											</a>
+										</li>
+										<li class="list-inline-item">
+											<a target="_blank" href="https://ie.linkedin.com/">
+												<i class="fab fa-linkedin" aria-hidden="true"></i>
+												<span class="sr-only">LinkedIn</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="social-link-spacing">
+									<ul class="list-inline social-links">
+										<li class="list-inline-item">
+											<a target="_blank" href="https://www.pinterest.com/">
+												<i class="fab fa-pinterest" aria-hidden="true"></i>
+												<span class="sr-only">Pinterest</span>
+											</a>
+										</li>
+										<li class="list-inline-item">
+											<a target="_blank" href="https://www.instagram.com/?hl=en">
+												<i class="fab fa-instagram" aria-hidden="true"></i>
+												<span class="sr-only">Instagram</span>
+											</a>
+										</li>
+										<li class="list-inline-item">
+											<a target="_blank" href="https://www.youtube.com/">
+												<i class="fab fa-youtube" aria-hidden="true"></i>
+												<span class="sr-only">YouTube</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<script
+				src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+			</script>
+			<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABucIRm-f4cvB9n5a7-wE_1aVqEKh1k_0&callback=initMap">
+			</script>
+			<script src="assets/js/maps.js"></script>
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+				integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+				crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+				integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+				crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+				integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+				crossorigin="anonymous"></script>
+                <script src="assets/js/main.js"></script>
 
 </body>
 

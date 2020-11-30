@@ -36,7 +36,7 @@ body {
 
 .navbar > a > h1 {
     margin-left: 50vw;
-    transform: translate(-50%);
+    transform: translate(-60%);
     font-family: 'Nerko One', sans-serif;
 }
 
@@ -124,11 +124,11 @@ div#map {
     margin-top: 50px;
 }
 
-.honey-jar > .container {
+#honey-jar > .container {
     position: relative;
 }
 
-.outer-jar {
+#outer-jar {
     position: absolute; 
     top: 0px; 
     left: 50%; 
@@ -138,7 +138,7 @@ div#map {
     transform: translate(-50%, 0%); 
 }
 
-.inner-jar {
+#inner-jar {
     position: absolute; 
     top: 0px; 
     left: 50%; 
@@ -148,7 +148,7 @@ div#map {
     transform: translate(-50%, 0%);
 }
 
-.honey {
+#honey {
     position: absolute; 
     top: 0px; 
     left: 50%; 
@@ -159,11 +159,11 @@ div#map {
 }
 
 .fade-in {
-animation: fadeIn ease 20s;
--webkit-animation: fadeIn ease 20s;
--moz-animation: fadeIn ease 20s;
--o-animation: fadeIn ease 20s;
--ms-animation: fadeIn ease 20s;
+animation: fadeIn ease 3s;
+-webkit-animation: fadeIn ease 3s;
+-moz-animation: fadeIn ease 3s;
+-o-animation: fadeIn ease 3s;
+-ms-animation: fadeIn ease 3s;
 }
 @keyframes fadeIn {
 0% {opacity:0;}
@@ -188,6 +188,12 @@ animation: fadeIn ease 20s;
 @-ms-keyframes fadeIn {
 0% {opacity:0;}
 100% {opacity:1;}
+}
+
+.jar-btn {
+    position: relative;
+    top: 430px;
+    left: 42%;
 }
 
 
@@ -216,6 +222,17 @@ animation: fadeIn ease 20s;
     bottom: 50%;
     }
 
+.iconImage {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.iconImage::after {
+    display: block;
+    clear: both;
+    content: "";
+}
 
 
 /*------------------------Footer------------------------*/
