@@ -1,34 +1,52 @@
-const cappagh = document.getElementById('myList');
+// global variables
+let hiveOne;
+let hiveTwo;
+let hiveThree;
+let honeyInterval;
+
+const cappagh = document.getElementById('hiveOne');
 cappagh.addEventListener('change', event => {
-  hiveOne = (event.target.value);
-  console.log(hiveOne);
+    hiveOne = (event.target.value);
 });
 
-function fillJar() { 
-    if (hiveOne === '0'){
-  return document.getElementById("honey-fill").innerHTML = '<img id="honey" class="fade-in" src=""/>'; 
-}   else if (hiveOne === '10'){
-  return document.getElementById("honey-fill").innerHTML = '<img id="honey" class="fade-in" src="./assets/images/10-full.png"/>'; 
-}   else if (hiveOne === '20'){
-  return document.getElementById("honey-fill").innerHTML = '<img id="honey" class="fade-in" src="./assets/images/20-full.png"/>'; 
-}   else if (hiveOne === '30'){
-  return document.getElementById("honey-fill").innerHTML = '<img id="honey" class="fade-in" src="./assets/images/30-full.png"/>'; 
-}   else if (hiveOne === '40'){
-  return document.getElementById("honey-fill").innerHTML = '<img id="honey" class="fade-in" src="./assets/images/40-full.png"/>'; 
-}   else if (hiveOne === '50'){
-  return document.getElementById("honey-fill").innerHTML = '<img id="honey" class="fade-in" src="./assets/images/50-full.png"/>'; 
-}   else if (hiveOne === '60'){
-  return document.getElementById("honey-fill").innerHTML = '<img id="honey" class="fade-in" src="./assets/images/60-full.png"/>'; 
-}   else if (hiveOne === '70'){
-  return document.getElementById("honey-fill").innerHTML = '<img id="honey" class="fade-in" src="./assets/images/70-full.png"/>'; 
-}   else if (hiveOne === '80'){
-  return document.getElementById("honey-fill").innerHTML = '<img id="honey" class="fade-in" src="./assets/images/80-full.png"/>'; 
-}   else if (hiveOne === '90'){
-  return document.getElementById("honey-fill").innerHTML = '<img id="honey" class="fade-in" src="./assets/images/90-full.png"/>'; 
-}   else if (hiveOne === '100'){
-  return document.getElementById("honey-fill").innerHTML = '<img id="honey" class="fade-in" src="./assets/images/100-full.png"/>'; 
-}
+const modelligo = document.getElementById('hiveTwo');
+modelligo.addEventListener('change', event => {
+    hiveTwo = (event.target.value);
+});
+
+const dungarvan = document.getElementById('hiveThree');
+dungarvan.addEventListener('change', event => {
+    hiveThree = (event.target.value);
+});
+
+function fillJar() {
+    let totalHoney = ['A','B','C'];
+    totalHoney[0] = hiveOne.toString();
+    totalHoney[1] = hiveTwo.toString();
+    totalHoney[2] = hiveThree.toString();
+    
+    let jarAmount = 0; // empty jar
+    honeyInterval = setInterval(() => {
+        if (jarAmount <= hiveOne) {
+            if (jarAmount != 0) {
+                if (jarAmount === 10) {
+                    document.getElementById("honey-fill").innerHTML = `<img id="honey" class="fade-in" src="assets/images/${jarAmount}-full.png">`;   
+                } else {
+                    document.getElementById("honey-fill").innerHTML = `
+                        <img id="honey" src="assets/images/${jarAmount-10}-full.png">
+                        <img id="honey" class="fade-in" src="assets/images/${jarAmount}-full.png">`;
+                }
+            }
+            jarAmount += 10; // increment by 10
+        } else {
+            // jarAmount === hiveOne amount, so clear interval
+            clearInterval(honeyInterval);
+            document.getElementById("honey-fill").innerHTML = `<img id="honey" src="assets/images/${hiveOne}-full.png">`;
+        }
+    }, 500);
+    console.log(totalHoney);
 };
+
 
 
 

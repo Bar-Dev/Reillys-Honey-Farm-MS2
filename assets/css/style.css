@@ -159,12 +159,13 @@ div#map {
 }
 
 .fade-in {
-animation: fadeIn ease 3s;
--webkit-animation: fadeIn ease 3s;
--moz-animation: fadeIn ease 3s;
--o-animation: fadeIn ease 3s;
--ms-animation: fadeIn ease 3s;
+animation: fadeIn ease 0.5s;
+-webkit-animation: fadeIn ease 0.5s;
+-moz-animation: fadeIn ease 0.5s;
+-o-animation: fadeIn ease 0.5s;
+-ms-animation: fadeIn ease 0.5s;
 }
+
 @keyframes fadeIn {
 0% {opacity:0;}
 100% {opacity:1;}
@@ -188,6 +189,13 @@ animation: fadeIn ease 3s;
 @-ms-keyframes fadeIn {
 0% {opacity:0;}
 100% {opacity:1;}
+}
+
+.sweep-to-top {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0s;
+  transition-duration: 2s;
 }
 
 .jar-btn {
@@ -218,8 +226,18 @@ animation: fadeIn ease 3s;
 }
 
 #hive-icon-one {
-    left: 50%;
-    bottom: 50%;
+    left: 60%;
+    bottom: 45%;
+    }
+
+#hive-icon-two {
+    left: 45%;
+    bottom: 40%;
+    }
+
+#hive-icon-three {
+    left: 30%;
+    bottom: 70%;
     }
 
 .iconImage {
