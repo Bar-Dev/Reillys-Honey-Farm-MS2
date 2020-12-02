@@ -72,8 +72,10 @@
 				</ol>
 			</div>
 		</div>
+	</div>
+        <div class="container-fluid">
 		<div class="row honey-content">
-			<div class="col-md-8">
+			<div class="col-md-6">
 				<div class="hive-honey-map">
 					<img src="./assets/images/honey-map.png" alt="Honey Map">
 
@@ -135,7 +137,7 @@
 											</div>
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											<button type="button" onclick="fillListOne()" class="btn btn-default" data-dismiss="modal">Close</button>
 										</div>
 									</div>
 								</div>
@@ -201,7 +203,7 @@
 											</div>
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											<button type="button" onclick="fillListTwo()" class="btn btn-default" data-dismiss="modal">Close</button>
 										</div>
 									</div>
 								</div>
@@ -267,7 +269,7 @@
 											</div>
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											<button type="button" onclick="fillListThree()" class="btn btn-default" data-dismiss="modal">Close</button>
 										</div>
 									</div>
 								</div>
@@ -278,7 +280,7 @@
 
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<div id="honey-jar">
 						<div class="container">
 							<img id="outer-jar" src="./assets/images/outer-jar.png" alt="Honey Jar">
@@ -287,13 +289,28 @@
                                 <div id="honey-fill">
                                 
                             </div>
-                            <button onclick="fillJar()" data-dismiss="modal" class="jar-btn">Fill Jar</button>
+                            <button onclick="fillJar()" class="jar-btn">Fill Jar</button>
                         </div>
 						</div>
 					</div>
+                    <div class="col-md-3">
+					<div class="hive-fills">
+                        <h2>Modelligo Hives:</h2>
+                        <h5>Fill of Honey - <span id="modelligo"></span>%</h5>
+                        <br>
+                        <h2>Cappagh Hives</h2>
+                        <h5>Fill of Honey - <span id="cappagh"></span>%</h5>
+                        <br>
+                        <h2>Dungarvan Hives</h2>
+                        <h5>Fill of Honey - <span id="dungarvan"></span>%</h5>
+                        <br>
+                        <h3>Total Amount:   <span id="listTotal"></span>%</h3>
+                        <br>
+					</div>
+					</div>
 				</div>
-			</div>
-
+        </div>  
+			
 			<!-- ==================== Footer ==================== -->
 
 			<footer class="container-fluid mt-auto">

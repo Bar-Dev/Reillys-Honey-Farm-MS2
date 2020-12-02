@@ -3,6 +3,7 @@ let hiveOne;
 let hiveTwo;
 let hiveThree;
 let honeyInterval;
+let totalHoney;
 
 const cappagh = document.getElementById('hiveOne');
 cappagh.addEventListener('change', event => {
@@ -19,15 +20,21 @@ dungarvan.addEventListener('change', event => {
     hiveThree = (event.target.value);
 });
 
+
 function fillJar() {
-    let totalHoney = ['A','B','C'];
-    totalHoney[0] = hiveOne.toString();
-    totalHoney[1] = hiveTwo.toString();
-    totalHoney[2] = hiveThree.toString();
+    let totalArray = ['A','B','C'];
+    totalArray[0] = Number(hiveOne);
+    totalArray[1] = Number(hiveTwo);
+    totalArray[2] = Number(hiveThree);
+
+    let totalHoney= totalArray.reduce(function(a, b){
+        return a + b;
+    }, 0);
     
+    if (totalHoney <= 100) {
     let jarAmount = 0; // empty jar
     honeyInterval = setInterval(() => {
-        if (jarAmount <= hiveOne) {
+        if (jarAmount <= totalHoney) {
             if (jarAmount != 0) {
                 if (jarAmount === 10) {
                     document.getElementById("honey-fill").innerHTML = `<img id="honey" class="fade-in" src="assets/images/${jarAmount}-full.png">`;   
@@ -41,12 +48,55 @@ function fillJar() {
         } else {
             // jarAmount === hiveOne amount, so clear interval
             clearInterval(honeyInterval);
-            document.getElementById("honey-fill").innerHTML = `<img id="honey" src="assets/images/${hiveOne}-full.png">`;
+            document.getElementById("honey-fill").innerHTML = `<img id="honey" src="assets/images/${totalHoney}-full.png">`;
         }
     }, 500);
     console.log(totalHoney);
+} else if (totalHoney > 100) {
+    alert("Please fill jar to exactly 100%");
+}
 };
 
+function fillListOne() {
+      document.getElementById("modelligo").innerHTML = hiveOne;
+      let totalArray = [0,0,0];
+    totalArray[0] = Number(hiveOne);
+    totalArray[1] = Number(hiveTwo);
+    totalArray[2] = Number(hiveThree);
+
+    let totalHoney= totalArray.reduce(function(a, b){
+        return a + b;
+    }, 0);
+      document.getElementById("listTotal").innerHTML = totalHoney;
+    };
+
+function fillListTwo() {
+      document.getElementById("cappagh").innerHTML = hiveTwo;
+      let totalArray = [0,0,0];
+    totalArray[0] = Number(hiveOne);
+    totalArray[1] = Number(hiveTwo);
+    totalArray[2] = Number(hiveThree);
+
+    let totalHoney= totalArray.reduce(function(a, b){
+        return a + b;
+    }, 0);
+      document.getElementById("listTotal").innerHTML = totalHoney;
+    };
+
+function fillListThree() {
+      document.getElementById("dungarvan").innerHTML = hiveThree;
+      let totalArray = [0,0,0];
+    totalArray[0] = Number(hiveOne);
+    totalArray[1] = Number(hiveTwo);
+    totalArray[2] = Number(hiveThree);
+
+    let totalHoney= totalArray.reduce(function(a, b){
+        return a + b;
+    }, 0);
+      document.getElementById("listTotal").innerHTML = totalHoney;
+    };
+
+   
 
 
 
