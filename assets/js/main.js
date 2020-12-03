@@ -5,6 +5,7 @@ let hiveThree;
 let honeyInterval;
 let totalHoney;
 
+
 const cappagh = document.getElementById('hiveOne');
 cappagh.addEventListener('change', event => {
     hiveOne = (event.target.value);
@@ -96,7 +97,29 @@ function fillListThree() {
       document.getElementById("listTotal").innerHTML = totalHoney;
     };
 
-   
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    hiveOne = 0;
+    hiveTwo = 0;
+    hiveThree = 0;
+        let startHoney = [0,0,0];
+    startHoney[0] = 0;
+    startHoney[1] = 0;
+    startHoney[2] = 0;
+
+    let totalHoney= startHoney.reduce(function(a, b){
+        return a + b;
+    }, 0);
+      document.getElementById("listTotal").innerHTML = totalHoney;
+    
+    
+  document.getElementById("modelligo").innerHTML = hiveOne;
+  document.getElementById("cappagh").innerHTML = hiveTwo;
+  document.getElementById("dungarvan").innerHTML = hiveThree;
+  document.getElementById("listTotal").innerHTML = totalHoney;
+});
+
 
 
 

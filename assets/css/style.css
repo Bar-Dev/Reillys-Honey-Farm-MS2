@@ -27,7 +27,7 @@ body {
 }
 
 #navbar-colors {
-    background-color: #b9bea5 !important;
+    background-color: #383a33 !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -256,7 +256,7 @@ animation: fadeIn ease 0.5s;
 /*------------------------Footer------------------------*/
 
 footer {
-    background-color: #b9bea5;
+    background-color: #383a33;
     color: #fafafa;
     min-height: 120px;
     margin: 0;
