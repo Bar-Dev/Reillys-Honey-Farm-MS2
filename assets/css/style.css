@@ -105,6 +105,8 @@ div#map {
     margin: 0 auto;
 }
 
+
+
 /*----------------------- Honey Page -----------------------*/
 
 .hive-honey-map {
@@ -262,56 +264,16 @@ footer {
     margin: 0;
 }
 
-.blockquote .cite-style {
-    background-color: #fff;
-    color: #555555;
-    margin: 0;
-    min-height: 0px;
-    box-sizing: content-box;
-}
-
-.cite-style::before {
-    content: "\2014\00A0";
-}
-
-.pdf-lists i {
-    font-size: 18px;
-    color: #fafafa;
-    text-align: center;
-    padding-left: 5px;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-
-.contact-list button {
-    text-align: left;
-    color: #fff;
-    padding: 0px;
-    margin: 0px;
-}
-
-
-.pdf-lists i:hover {
-    color: #2F0147;
-}
-
-#bike-shop-list {
-    margin: 0px 0px 3px 0px;
-}
-
 .social-links {
     padding-bottom: 15px;
 }
 
 .social-links li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
+    width: 60px;
+    height: 60px;
+    padding: 9px 0;
     border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
+    font-size: 40px;
     text-align: center;
     color: #fafafa;
     background: #8f8f8f;
@@ -325,8 +287,9 @@ footer {
     background: #2F0147;
 }
 
-.list-inline-item:not(:last-child) {
+.list-inline-item {
     margin: 0;
+    padding: 0px 45px;
 }
 
 #footer-details {
@@ -334,19 +297,11 @@ footer {
     margin-top: 100px;
 }
 
-#footer-middle {
-    text-align: left;
-    padding-right: 150px;
+#footer-details h3 {
+    text-align: center;
 }
 
-#footer-right {
-    text-align: right;
-}
-
-#footer-right h5 {
-    text-align: right;
-}
-
+/*
 .modal-footer .btn-secondary {
     background-color: #777777;
     border: none;
@@ -377,9 +332,9 @@ footer {
 .modal-footer .btn-success:hover {
     background-color: #b9bea5;
 }
-
+*/
 .social-links {
-    text-align: right;
+    text-align: center;
 }
 
 .social-link-spacing {
