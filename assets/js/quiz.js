@@ -1,5 +1,3 @@
-//Main source for code - Kevin Briggs YouTube Javascript tutorial - make a quiz https://www.youtube.com/watch?v=C7NsIRhoWuE 
-
 function check() {
 
     var question1 = document.quiz.question1.value;
@@ -19,11 +17,11 @@ function check() {
         correct++;
     }
 
-    if (question3 == "Honey") {
+    if (question3 == "Pollen") {
         correct++;
     }
 
-    if (question4 == "Third") {
+    if (question4 == "1,500") {
         correct++;
     }
 
@@ -45,7 +43,7 @@ fullReset.addEventListener('click', function() {
 //https://stackoverflow.com/questions/40371972/resetting-a-quiz-with-reset-button
 
 function startQuiz() {
-    document.getElementById("startButton").style.visibility = "hidden";
+    document.getElementById("startButton").style.display = "none";
     document.getElementById("questionOne").innerHTML =
     `<div class="quizspan">
                         <p class="question">1) When are bee's most active?</p>
@@ -58,8 +56,8 @@ function startQuiz() {
 }
 
 function quizNextOne() {
-    document.getElementById("quiz-next-one").style.visibility = "hidden";
-    document.getElementById("questionOne").style.visibility = "hidden";
+    document.getElementById("quiz-next-one").style.display = "none";
+    document.getElementById("questionOne").style.display = "none";
     document.getElementById("questionTwo").innerHTML =
                         `<div class="quizspan">
                         <p class="question">2) How long do honey bee's live?</p>
@@ -72,8 +70,8 @@ function quizNextOne() {
 }
 
 function quizNextTwo() {
-    document.getElementById("quiz-next-two").style.visibility = "hidden";
-    document.getElementById("questionTwo").style.visibility = "hidden";
+    document.getElementById("quiz-next-two").style.display = "none";
+    document.getElementById("questionTwo").style.display = "none";
     document.getElementById("questionThree").innerHTML =
                         `<div class="quizspan">
                         <p class="question">3) What do bee's collect from flowers?</p>
@@ -83,4 +81,16 @@ function quizNextTwo() {
                      <div class="quiz-nextTwo">
 											<button type="button" onclick="quizNextThree()" id="quiz-next-three" class="btn btn-default">Next</button>
 										</div>`;
+}
+
+function quizNextThree() {
+    document.getElementById("quiz-next-three").style.display = "none";
+    document.getElementById("questionThree").style.display = "none";
+    document.getElementById("questionFour").innerHTML =
+                        `<div class="quizspan">
+                        <p class="question">4) How many eggs does a Queen Bee lay a day? </p>
+                        <input type="radio" id="mc7" name="question4" value="150" class="answer">150<br>
+                        <input type="radio" id="mc8" name="question4" value="1,500" class="answer">1,500<br>
+                     </div>
+                     <input type="button" id="button" value="Results" onclick= "check()" class="btn btn-info">`;
 }
