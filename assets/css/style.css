@@ -265,6 +265,26 @@ animation: fadeIn ease 0.5s;
 }
 
 
+/*----------------------- Quiz Page -----------------------*/
+
+.quiz-image {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.quiz-title {
+    text-align: center;
+}
+
+.quiz-title h1 {
+    text-transform: uppercase;
+}
+
+.question-box {
+    position: relative;
+    top: 0;
+}
+
 /*------------------------Footer------------------------*/
 
 footer {

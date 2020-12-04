@@ -57,6 +57,50 @@
             <div class="quiz-image">
                 <img src="./assets/images/wall-hives.png" alt="Wall Hives">
             </div>
+            <div class="quiz-title">
+                <h1>The honey Quiz</h1>
+                <h4>Win 10% discount on your order by completing our Quiz correctly</h4>
+            </div>
+            
+         <div class="container quiz-section-style" id="quiz-section">
+            <div class="row">
+               <div class="col-md-12 text-center">
+                  <div class="quiz-start">
+											<button type="button" onclick="startQuiz()" id="startButton" class="btn btn-default">Let's get Buzzing!</button>
+										</div>
+                                        
+                  <form id="quiz" name="quiz" class="quiz-style">
+                     
+                     <div id="questionOne" class="question-box">
+                     
+                     </div>
+                     
+                     <div id="questionTwo" class="question-box">
+                     </div>
+
+                     <div id="questionThree" class="question-box">
+                     </div>
+                     
+                     
+                     <!--
+                     
+                     <div class="quizspan">
+                        <p class="question">4) What position does England currently hold in the netball world ranking? </p>
+                        <input type="radio" id="mc7" name="question4" value="First" class="answer">First<br>
+                        <input type="radio" id="mc8" name="question4" value="Third" class="answer">Third<br>
+                     </div>
+                     <input type="button" id="button" value="Results" onclick= "check()" class="btn btn-info">
+                     -->
+                  </form> 
+                  <div id="after_submit">
+                     <p id="number_correct"></p>
+                     <button id="fullReset" class="btn btn-warning">Try Again</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      
+            
         </section>
               <!-- ==================== Footer ==================== -->
 
@@ -115,7 +159,7 @@
       </footer>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABucIRm-f4cvB9n5a7-wE_1aVqEKh1k_0&callback=initMap"></script>
-    <script src="assets/js/maps.js"></script>
+    <script src="assets/js/quiz.js"></script>
         
 
 </body>
