@@ -54,12 +54,12 @@ function fillJar() {
     }, 500);
     console.log(totalHoney);
 } else if (totalHoney > 100) {
-    alert("Please fill jar to exactly 100%");
+    swal("Please fill jar to exactly 100%");
 }
 };
 
 function fillListOne() {
-      document.getElementById("modelligo").innerHTML = hiveOne;
+      document.getElementById("dungarvan").innerHTML = hiveOne;
       let totalArray = [0,0,0];
     totalArray[0] = Number(hiveOne);
     totalArray[1] = Number(hiveTwo);
@@ -85,7 +85,7 @@ function fillListTwo() {
     };
 
 function fillListThree() {
-      document.getElementById("dungarvan").innerHTML = hiveThree;
+      document.getElementById("modelligo").innerHTML = hiveThree;
       let totalArray = [0,0,0];
     totalArray[0] = Number(hiveOne);
     totalArray[1] = Number(hiveTwo);

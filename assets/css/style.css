@@ -27,7 +27,7 @@ body {
 }
 
 #navbar-colors {
-    background-color: #383a33 !important;
+    background-color: #555f7b !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -105,7 +105,15 @@ div#map {
     margin: 0 auto;
 }
 
+.click-to-map {
+    position: relative;
+}
 
+.click-to-map span {
+    position: absolute;
+    bottom: 0;
+    left: 15;
+}
 
 /*----------------------- Honey Page -----------------------*/
 
@@ -124,6 +132,7 @@ div#map {
 
 .honey-content {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #honey-jar > .container {
@@ -203,7 +212,8 @@ animation: fadeIn ease 0.5s;
 .jar-btn {
     position: relative;
     top: 430px;
-    left: 42%;
+    left: 35%;
+    width: 100px;
 }
 
 
@@ -214,7 +224,7 @@ animation: fadeIn ease 0.5s;
     z-index: 1;
     width: 2rem;
     height: 2rem;
-    padding: 4px 0;
+    padding: 1.3px 0;
     border-radius: 50%;
     border: 2px solid #b9bea5; 
     font-size: 15px;
@@ -258,7 +268,7 @@ animation: fadeIn ease 0.5s;
 /*------------------------Footer------------------------*/
 
 footer {
-    background-color: #383a33;
+    background-color: #555f7b;
     color: #fafafa;
     min-height: 120px;
     margin: 0;

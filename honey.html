@@ -40,6 +40,9 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="honey.html">Honey</a>
 					</li>
+                    <li class="nav-item">
+						<a class="nav-link" href="quiz.html">Quiz</a>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#" data-toggle="modal" data-target="#signUpModal">Sign Up</a>
 					</li>
@@ -99,7 +102,7 @@
 												<div class="container-fluid">
 													<div class="row">
 														<div class="col-6">
-															<h2>Modelligo Hives</h2><br>
+															<h2>Dungarvan Hives</h2><br>
 															
 															<form>
 																<fieldset>
@@ -127,7 +130,7 @@
 															
 															</div>
 														<div class="col-6">
-															<img src="./assets/images/lavender.jpg" class="d-block w-100" alt="Lavender Fields">
+															<img src="./assets/images/rosemary.jpg" class="d-block w-100" alt="Lavender Fields">
 
                                             </div>
 
@@ -165,7 +168,7 @@
 												<div class="container-fluid">
 													<div class="row">
 														<div class="col-6">
-															<h2>Modelligo Hives</h2><br>
+															<h2>Cappagh Hives</h2><br>
 															
 															<form>
 																<fieldset>
@@ -193,7 +196,7 @@
 															
 															</div>
 														<div class="col-6">
-															<img src="./assets/images/rosemary.jpg" class="d-block w-100" alt="Rosemary Flowers">
+															<img src="./assets/images/blackberry-flowers.jpg" class="d-block w-100" alt="Rosemary Flowers">
 
                                             </div>
 
@@ -255,11 +258,14 @@
 																</fieldset>
                                                                 
 															</form>
+                                                            <div class="modal-footer">
+											<button type="button" onclick="fillListThree()" class="btn btn-default" data-dismiss="modal">Select</button>
+										</div>
 															
 															
 															</div>
 														<div class="col-6">
-															<img src="./assets/images/blackberry-flowers.jpg" class="d-block w-100" alt="Rosemary Flowers">
+															<img src="./assets/images/lavender.jpg" class="d-block w-100" alt="Rosemary Flowers">
 
                                             </div>
 
@@ -268,9 +274,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="modal-footer">
-											<button type="button" onclick="fillListThree()" class="btn btn-default" data-dismiss="modal">Close</button>
-										</div>
+										
 									</div>
 								</div>
 							</div>
@@ -289,7 +293,7 @@
                                 <div id="honey-fill">
                                 
                             </div>
-                            <button onclick="fillJar()" class="jar-btn">Fill Jar</button>
+                            <button onclick="fillJar()" class="jar-btn rounded-pill">Fill Jar</button>
                         </div>
 						</div>
 					</div>
@@ -313,87 +317,59 @@
 			
 			<!-- ==================== Footer ==================== -->
 
-			<footer class="container-fluid mt-auto">
-				<div id="footer-details" class="row">
-					<div class="col-sm-3 col-md-2 footer-spacing">
-						<h5 class="uppercase general-sub">Contact</h5>
-						<div class="contact-list">
-							<button type="button" class="btn" data-toggle="modal" data-target="#businessContact">Business</button>
-						</div>
-						<div class="contact-list">
-							<button type="button" class="btn" data-toggle="modal" data-target="#publicContact" data-whatever="@fat">Public</button>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-6 footer-spacing" id="footer-middle">
-						<h5 class="uppercase general-sub">Download Links</h5>
-						<p class="inline-block" id="bike-shop-list">
-							Bike Hire Shops <i class="fas fa-long-arrow-alt-right"></i>
-							<a href="./assets/pdf/bike-hire.pdf" target="_blank" class="pdf-lists">
-								<i class="fas fa-bicycle" aria-hidden="true"></i>
-								<span class="sr-only">Download link.</span>
-							</a>
-						</p>
-						<p id="cafe">
-							Cafes Dungarvan <i class="fas fa-long-arrow-alt-right"></i>
-							<a href="./assets/pdf/cafe-list.pdf" target="_blank" class="pdf-lists">
-								<i class="fas fa-mug-hot" aria-hidden="true"></i>
-								<span class="sr-only">Download link.</span>
-							</a>
-						</p>
-					</div>
-					<div class="col-sm-3 col-md-4 footer-spacing" id="footer-right">
-						<h5 class="uppercase general-sub">Social</h5>
-						<div class="row">
-							<div class="col">
-								<div class="social-link-spacing">
-									<ul class="list-inline social-links">
-										<li class="list-inline-item">
-											<a target="_blank" href="https://www.facebook.com/">
-												<i class="fab fa-facebook-f" aria-hidden="true"></i>
-												<span class="sr-only">Facebook</span>
-											</a>
-										</li>
-										<li class="list-inline-item">
-											<a target="_blank" href="https://twitter.com/?lang=en">
-												<i class="fab fa-twitter" aria-hidden="true"></i>
-												<span class="sr-only">Twitter</span>
-											</a>
-										</li>
-										<li class="list-inline-item">
-											<a target="_blank" href="https://ie.linkedin.com/">
-												<i class="fab fa-linkedin" aria-hidden="true"></i>
-												<span class="sr-only">LinkedIn</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="social-link-spacing">
-									<ul class="list-inline social-links">
-										<li class="list-inline-item">
-											<a target="_blank" href="https://www.pinterest.com/">
-												<i class="fab fa-pinterest" aria-hidden="true"></i>
-												<span class="sr-only">Pinterest</span>
-											</a>
-										</li>
-										<li class="list-inline-item">
-											<a target="_blank" href="https://www.instagram.com/?hl=en">
-												<i class="fab fa-instagram" aria-hidden="true"></i>
-												<span class="sr-only">Instagram</span>
-											</a>
-										</li>
-										<li class="list-inline-item">
-											<a target="_blank" href="https://www.youtube.com/">
-												<i class="fab fa-youtube" aria-hidden="true"></i>
-												<span class="sr-only">YouTube</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
+			<footer class="container-fluid mt-auto" id="footer-details">
+         <div class="row">
+            <div class="col-12">
+               <h3>Social</h3>
+               </div>
+               </div>
+               
+               <div class="row">
+                  <div class="col-12 social-link-spacing">
+                     
+                        <ul class="list-inline social-links">
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://www.facebook.com/">
+                              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                              <span class="sr-only">Facebook</span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://twitter.com/?lang=en">
+                              <i class="fab fa-twitter" aria-hidden="true"></i>
+                              <span class="sr-only">Twitter</span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://ie.linkedin.com/">
+                              <i class="fab fa-linkedin" aria-hidden="true"></i>
+                              <span class="sr-only">LinkedIn</span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://www.pinterest.com/">
+                              <i class="fab fa-pinterest" aria-hidden="true"></i>
+                              <span class="sr-only">Pinterest</span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://www.instagram.com/?hl=en">
+                              <i class="fab fa-instagram" aria-hidden="true"></i>
+                              <span class="sr-only">Instagram</span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item">
+                              <a target="_blank" href="https://www.youtube.com/">
+                              <i class="fab fa-youtube" aria-hidden="true"></i>
+                              <span class="sr-only">YouTube</span>
+                              </a>
+                           </li>
+                        </ul>
+                    
+               
+            </div>
+         </div>
+      </footer>
 			<script
 				src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
 			</script>
@@ -411,6 +387,7 @@
 				integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 				crossorigin="anonymous"></script>
                 <script src="assets/js/main.js"></script>
+                <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 
