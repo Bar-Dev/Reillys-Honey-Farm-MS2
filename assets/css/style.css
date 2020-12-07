@@ -135,10 +135,6 @@ div#map {
     margin-bottom: 50px;
 }
 
-.honey-jar {
-    position: relative;
-}
-
 .honey-jar button {
     position: absolute;
     bottom: 0;
@@ -250,18 +246,21 @@ animation: fadeIn ease 0.5s;
 }
 
 #hive-icon-one {
-    left: 60%;
-    bottom: 45%;
+    left: 70%;
+    bottom: 48%;
+    outline: none;
     }
 
 #hive-icon-two {
     left: 45%;
     bottom: 40%;
+    outline: none;
     }
 
 #hive-icon-three {
     left: 30%;
     bottom: 70%;
+    outline: none;
     }
 
 .iconImage {
@@ -275,6 +274,7 @@ animation: fadeIn ease 0.5s;
     clear: both;
     content: "";
 }
+
 
 
 /*----------------------- Quiz Page -----------------------*/
@@ -314,30 +314,23 @@ animation: fadeIn ease 0.5s;
 /* ----------------------Test Button--------------------*/
 
 .stylish-button {
-    user-select: none;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    outline: none;
-    cursor: pointer;
+    border-radius: 50rem!important;
     width: 150px;
-    height: 35px;
     background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
-    border-radius: 30px;
     border: 1px solid #8F9092;
-    transition: all 0.2s ease;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: #606060;
-    text-shadow: 0 1px #fff;
-    margin: 0 auto;
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 0 #CECFD1;
 }
 
 .stylish-button:hover:not([disabled]), [role="button"]:hover:not([disabled]) {
     box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+
+.stylish-button:active, [role="button"]:hover:not([disabled]) {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+
+.stylish-button:focus {
+    outline: none;
 }
 
 /*------------------------Footer------------------------*/
@@ -350,15 +343,15 @@ footer {
 }
 
 .social-links {
-    padding-bottom: 15px;
+    padding-bottom: 0px;
 }
 
 .social-links li a i {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     padding: 9px 0;
     border-radius: 50%;
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
     color: #fafafa;
     background: #d68c04;
@@ -374,11 +367,11 @@ footer {
 
 .list-inline-item {
     margin: 0;
-    padding: 0px 45px;
+    padding: 0px 10px;
 }
 
 #footer-details {
-    padding: 20px;
+    padding-top: 35px;
     margin-top: 100px;
 }
 

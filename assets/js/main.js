@@ -32,7 +32,9 @@ function fillJar() {
         return a + b;
     }, 0);
     
-    if (totalHoney <= 100) {
+    if (totalHoney === 0) {                  
+        swal("Please select some honey!");
+    } else if (totalHoney <= 100) {
     let jarAmount = 0; // empty jar
     honeyInterval = setInterval(() => {
         if (jarAmount <= totalHoney) {
