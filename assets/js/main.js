@@ -122,7 +122,9 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("listTotal").innerHTML = totalHoney;
 });
 
-
+document.getElementById("honey-mix-button").onclick = function () {
+        location.href = "honey.html";
+    };
 
 
 
