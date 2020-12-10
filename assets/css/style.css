@@ -615,10 +615,22 @@ footer {
     .hero-video-content {
     height: 300px;
     } 
+    #outer-jar {
+    width: 70%;
+    padding: 40px 0px 0px 50px;
+    }
+    #inner-jar {
+    width: 70%;
+    padding: 40px 0px 0px 50px;
+    }
+    #honey {
+    width: 70%;
+    padding: 40px 0px 0px 50px;
+    }
 }
 
 /* ---- Break Six ---- */
-@media(max-width: 375px) {
+@media(max-width: 414px) {
     .bee-nav img {
     width: 30px;
     }
@@ -669,4 +681,42 @@ footer {
     .location-content p, .location-content span  {
     padding: 0px 20px 0px 20px;
     }
+    #outer-jar {
+    width: 90%;
+    padding: 40px 0px 0px 10px;
+    }
+    #inner-jar {
+    width: 90%;
+    padding: 40px 0px 0px 10px;
+    }
+    #honey {
+    width: 90%;
+    padding: 40px 0px 0px 10px;
+    }
+    .hive-content-padding {
+    padding: 40px 5px 0px 0px;
+    text-align: center;
+    }
+    .honey-text {
+    padding-left: 20px;
+    }
+    .honey-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+    .how-it-works-title {
+    padding-left: 20px;
+    }
+    .title-break {
+    display: none;
+    }
+    .how-it-works-title h2 {
+    margin-top: 20px;
+    }
+    .home-image {
+    margin-top: 50px;
+    }
+    .mt-auto, .my-auto {
+    margin-top: 100px !important;
+}
 }
