@@ -50,7 +50,7 @@ function startQuiz() {
     document.getElementById("fullReset").style.visibility = "hidden";
     document.getElementById("questionOne").innerHTML =
     `<div class="quizspan">
-                        <p class="question">1) When are bee's most active?</p>
+                        <p class="question">1. When are bee's most active?</p>
                         <input type="radio" id="mc1" name="question1" value="Mar-Sep" class="answer">Mar-Sep</input><br>
                         <input type="radio" id="mc2" name="question1" value="Sep-Mar" class="answer">Sep-Mar</input><br>
                      </div>

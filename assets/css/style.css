@@ -348,16 +348,23 @@ animation: fadeIn ease 0.5s;
 
 .quizspan {
     border: 1px solid black;
+    border-radius: 100px;
     max-width: 400px;
+    font-weight: 600;
     margin: 0 auto;
     height: 130px;
     margin-top: 20px;
     padding-top: 20px;
     margin-bottom: 15px;
+    background: url('../images/rosemary50.png') no-repeat;
 }
 
 #fullReset {
     visibility: hidden;
+}
+
+.quiz-start {
+    margin-top: 30px;
 }
 
 /* ----------------------Test Button--------------------*/
@@ -369,11 +376,11 @@ animation: fadeIn ease 0.5s;
     border: 1px solid #8F9092;
     box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 0 #CECFD1;
 }
-
+/*
 .stylish-button:hover:not([disabled]), [role="button"]:hover:not([disabled]) {
     box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
 }
-
+*/
 .stylish-button:active, [role="button"]:hover:not([disabled]) {
     box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
 }
@@ -421,7 +428,7 @@ footer {
 
 #footer-details {
     padding-top: 35px;
-    margin-top: 100px;
+    margin-top: 100px !important;
 }
 
 #footer-details h3 {
