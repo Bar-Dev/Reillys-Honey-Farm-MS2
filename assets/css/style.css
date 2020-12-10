@@ -87,9 +87,9 @@ body {
 }
 
 .opening-paragraph {
-    padding-left: 60px;
+    padding-left: 130px;
     margin-top: 40px;
-    padding-right: 30px;
+    padding-right: 130px;
 }
 
 .location-content {
@@ -114,6 +114,10 @@ body {
 .main-page-button-text {
     width: 300px !important;
     text-align: center;
+}
+
+.break {
+    display: none;
 }
 
 /*------------------------ Map ------------------------*/
@@ -165,6 +169,24 @@ div#map {
     left: 15;
 }
 
+.hive-fills h2{
+    margin-bottom: 0px;
+    margin-top: 25px;
+    }
+
+.hive-fills h3{
+    font-size: 2rem;
+    margin-top: 30px;
+    }
+
+.hive-fills h5{
+    margin-bottom: 0px;
+}
+
+#no-top-margin {
+    margin-top: 0px;
+}
+
 #outer-jar {
     position: absolute; 
     width: 80%;
@@ -194,11 +216,6 @@ div#map {
     width: 80%;
     height: auto;
     z-index: 1;
- /*   top: 0px; 
-    left: 50%; 
-    max-width: 100%;
-    height: 400px;
-    transform: translate(-50%, 0%); */
 }
 
 .fade-in {
@@ -240,14 +257,22 @@ animation: fadeIn ease 0.5s;
   -webkit-transition-duration: 0s;
   transition-duration: 2s;
 }
-/*
-.jar-btn {
-    position: relative;
-    top: 430px;
-    left: 35%;
-    width: 100px;
+
+.how-it-works-title {
+    padding-left: 0px;
 }
-*/
+
+.how-it-works-title h2 {
+    padding-left: 0px;
+}
+
+.how-it-works-title ol {
+    padding-left: 20px;
+}
+
+.make-title p {
+    padding-right: 50px;
+}
 
 /*------------------------ Hives ------------------------*/
 
@@ -422,19 +447,20 @@ footer {
     .hero-video-content {
     height: 600px;
     } 
+    .hive-fills h2{
+    font-size: 25px;
+    }
+    .hive-fills h3{
+    font-size: 22px;
+    }
+    .hive-fills h5{
+    font-size: 15px;
+    }
+    .honey-text {
+    padding-left: 50px;
+    }
 }
 
-
-/* ---- Break Two ---- */
-@media(max-width: 1115px) {
-    .navbar > a > h1 {
-    margin-left: 40vw;
-    transform: translate(-30%);
-    }  
-    .hero-video-content {
-    height: 550px;
-    } 
-}
 
 
 /* ---- Break Two ---- */
@@ -448,10 +474,23 @@ footer {
     } 
 }
 
+/* ---- Break Two ---- */
+@media(max-width: 1024px) {
+    .hive-fills h2{
+    margin-bottom: 0px;
+    margin-top: 12px;
+    }
+    
+    .hive-fills h5{
+    margin-bottom: 0px;
+    margin-top: 5px;
+    } 
+}
+
 /* ---- Break Three ---- */
 @media(max-width: 991px) {
     .location-images > img {
-    width: 100%;
+    width: 90%;
     }
     .location-content p, .location-content span  {
     font-size: 15px;
@@ -459,10 +498,29 @@ footer {
     .locations {
     max-width: 850px !important;
     }
+    .hive-fills h2{
+    font-size: 15px;
+    }
+    .hive-fills h5{
+    font-size: 12px
+    } 
+    .hive-fills h3{
+    font-size: 18px;
+    margin-top: 20px;
+    }
+    .hive-content-padding {
+    padding: 0px 5px 0px 5px;
+    }
+    .make-title h2 {
+    font-size: 25px;
+    }
+    .how-it-works-title h2 {
+    font-size: 25px;
+    }
 }
 
 /* ---- Break Three ---- */
-@media(max-width: 768px) {
+@media(max-width: 767px) {
     .locations {
     max-width: 700px !important;
     }
@@ -477,10 +535,138 @@ footer {
     .hero-video-content {
     height: 350px;
     } 
+    .bee-nav img {
+    width: 50px;
+    height: auto;
+    top: 0px;
+    position: relative;
+    }
+    .navbar > a > h1 {
+    margin-left: 35vw;
+    transform: translate(-25%);
+    font-size: 35px;
+    }
+    .hero-video {
+    margin-top: 76px;
+    }
+    #inner-jar {
+    width: 75%;
+    padding: 40px 0px 0px 100px;
+    }
+    #outer-jar {
+    width: 75%;
+    padding: 40px 0px 0px 100px;
+    }
+    #honey {
+    width: 75%;
+    padding: 40px 0px 0px 100px;
+    }
+    .hive-content-padding {
+    padding: 40px 75px 0px 0px;
+    text-align: center;
+}
+    .hive-honey-map > img {
+    width: 90%;
+    height: auto;
+    max-height: 350px;
+}
 }
 
 /* ---- Break Four ---- */
-@media(max-width: 574px) {
-     
+@media(max-width: 655px) {
+     .location-content p, .location-content span  {
+    font-size: 12px;
+    }
 }
 
+/* ---- Break Five ---- */
+@media(max-width: 574px) {
+     .location-content p, .location-content span  {
+    font-size: 12px;
+    padding: 0px 30px 0px 30px;
+    }
+    .location-content span {
+    padding-top: 10px;
+    }
+    .location-content p {
+    margin-top: 15px;
+    }
+    .bee-nav img {
+    width: 40px;
+    }
+    .navbar > a > h1 {
+    margin-left: 35vw;
+    transform: translate(-25%);
+    font-size: 30px;
+    }
+    .navbar-toggler {
+    font-size: 0.75rem;
+    }
+    .hero-video {
+    margin-top: 70px;
+    }
+    .submain-headings {
+    padding-left: 30px;
+    margin-top: 50px;
+    }
+    .break {
+    display: block;
+    }
+    .hero-video-content {
+    height: 300px;
+    } 
+}
+
+/* ---- Break Six ---- */
+@media(max-width: 375px) {
+    .bee-nav img {
+    width: 30px;
+    }
+    .navbar > a > h1 {
+    margin-left: 30vw;
+    transform: translate(-20%);
+    font-size: 20px;
+    margin-bottom: 0rem;
+    }
+    .hero-video {
+    height: auto;
+    max-width: 100%;
+    margin-top: 50px;
+    }
+    .hero-video-content {
+    height: 200px;
+    }
+    .gm-style-mtc {
+    height: 40px !important;
+    }
+    .social-links li a i {
+    width: 40px;
+    height: 40px;
+    padding: 8px 0;
+    border-radius: 50%;
+    font-size: 25px;
+    }
+    .list-inline-item:not(:last-child) {
+    margin-right: 0rem;
+    }
+    .list-inline-item {
+    margin: 0;
+    padding: 0px 5px;
+    }
+    .opening-paragraph {
+    padding-left: 30px;
+    margin-top: 30px;
+    padding-right: 20px;
+    }
+    .main-headings {
+    margin-top: 30px;
+    font-size: 1.75rem;
+    text-decoration: underline;
+    }
+    .opening-paragraph h2 {
+    font-size: 1.5rem;
+    }
+    .location-content p, .location-content span  {
+    padding: 0px 20px 0px 20px;
+    }
+}

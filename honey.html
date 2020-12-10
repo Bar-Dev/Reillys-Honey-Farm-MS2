@@ -25,7 +25,7 @@
 		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar-colors">
 			<a class="navbar-brand" href="index.html">
 				<div class="bee-nav">
-					<img width="75" height="55" src="./assets/images/honey-bee.png" alt="Honey Bee">
+					<img src="./assets/images/honey-bee.png" alt="Honey Bee">
                 </div>
 					<h1>Reilly's Honey Farm</h1>
 			</a>
@@ -61,9 +61,20 @@
 
 	<!-- ==================== Main Content ==================== -->
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row honey-content honey-text">
-			<div class="col">
+			<div class="col-sm-6 make-title">
+				<h2>Make your own taste!</h2>
+				<br>
+				<p>
+                At Reillys Honey Farm we believe in letting the 
+                customer choose what flavour they think tastes 
+                best. 
+                That's why we have introduced are unique idea to
+                allow you to make your own special personal taste.
+                </p>
+			</div>
+            <div class="col-sm-6 how-it-works-title">
 				<h2>How it works:</h2>
 				<br>
 				<ol>
@@ -285,7 +296,7 @@
 
                 <!-- End of test icons-->
 
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6">
                     
                             <div class="honey-jar">
 					        
@@ -299,18 +310,18 @@
                             </div>
                             </div>
 					
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 hive-content-padding">
 					<div class="hive-fills">
-                        <h2>Modelligo Hives:</h2>
+                        <h2 id="no-top-margin">Modelligo Hives:</h2>
                         <h5>Fill of Honey - <span id="modelligo"></span>%</h5>
-                        <br>
+                        
                         <h2>Cappagh Hives</h2>
                         <h5>Fill of Honey - <span id="cappagh"></span>%</h5>
-                        <br>
+                        
                         <h2>Dungarvan Hives</h2>
                         <h5>Fill of Honey - <span id="dungarvan"></span>%</h5>
-                        <br>
-                        <h3>Total Amount:   <span id="listTotal"></span>%</h3>
+                        
+                        <h3><strong>Total Amount:   <span id="listTotal"></span>%</strong></h3>
                         <br>
                         <button onclick="fillJar()" class="stylish-button rounded-pill">Fill Jar</button>
 					    </div>
