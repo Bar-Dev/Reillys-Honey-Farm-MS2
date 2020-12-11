@@ -69,7 +69,7 @@ function verify() {
         location.href = "quiz.html";}
     } else if (totalHoney !== 100){
         swal("Please fill jar to exactly 100%");
-    }
+    } 
 };
 
 function fillListOne() {
