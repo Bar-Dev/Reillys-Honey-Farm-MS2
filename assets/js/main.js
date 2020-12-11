@@ -59,19 +59,22 @@ function fillJar() {
     swal("Please fill jar to exactly 100%");
 } if (totalHoney === 100) {
     document.getElementById("checkout-quiz-button").innerHTML = `<button onclick="verify()" id="quiz-page-button" class="stylish-button rounded-pill main-page-button-text">Try our quiz for a discount!</button>`;
+    document.getElementById("quiz-page-button").onclick = function () {
+        location.href = "quiz.html";}
     }
-
+console.log(totalHoney);
 };
-
+/*
 function verify() {
     if (totalHoney === 100) {
         document.getElementById("quiz-page-button").onclick = function () {
         location.href = "quiz.html";}
-    } else if (totalHoney !== 100){
+    } 
+    if (totalHoney !== 100){
         swal("Please fill jar to exactly 100%");
     } 
 };
-
+*/
 function fillListOne() {
       document.getElementById("dungarvan").innerHTML = hiveOne;
       let totalArray = [0,0,0];
