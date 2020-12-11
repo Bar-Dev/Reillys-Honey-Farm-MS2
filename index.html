@@ -160,7 +160,7 @@
 					</div>
                     <div class="row">
                     <div class="col main-page-button">
-                    <button onclick="location.href = 'honey.html';" id="honey-mix-button" class="stylish-button rounded-pill main-page-button-text">Click to go mix some Honey!</button>
+                    <button onclick="Redirect()" id="honey-mix-button" class="stylish-button rounded-pill main-page-button-text">Click to go mix some Honey!</button>
 					</div>
                     </div>
                     </div>
@@ -215,6 +215,37 @@
             </div>
          </div>
       </footer>
+
+
+              <!-- ==================== Modal ==================== -->
+
+      <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-specific">
+               <div class="modal-header">
+                  <h5 class="modal-title">Enter email to keep up to date on our Bees!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               </div>
+               <div class="modal-body">
+                  <form>
+                     <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
     <script
 				src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
 			</script>
@@ -231,7 +262,7 @@
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
 				integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 				crossorigin="anonymous"></script>
-    <script src="assets/js/maps.js"></script>
+            <script src="assets/js/main.js"></script>
         
 
 </body>

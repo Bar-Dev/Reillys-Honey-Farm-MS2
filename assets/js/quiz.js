@@ -27,6 +27,14 @@ function check() {
 
     if (correct < 4) {
         document.getElementById("fullReset").innerHTML = `<button  class="stylish-button">Try Again</button>`;
+    } else if (correct === 4) {
+        swal({
+    title: "Well Done!",
+    text: "Your discounted Honey is on the way!",
+    type: "success"
+}).then(function() {
+    window.location = "index.html";
+});
     }
 
 //Reveals results
@@ -65,7 +73,7 @@ function quizNextOne() {
     document.getElementById("questionOne").style.display = "none";
     document.getElementById("questionTwo").innerHTML =
                         `<div class="quizspan">
-                        <p class="question">2) How long do honey bee's live?</p>
+                        <p class="question">2. How long do honey bee's live?</p>
                         <input type="radio" id="mc3" name="question2" value="6 weeks" class="answer">6 weeks<br>
                         <input type="radio" id="mc4" name="question2" value="6 months" class="answer">6 months<br>
                      </div>
@@ -80,7 +88,7 @@ function quizNextTwo() {
     document.getElementById("questionTwo").style.display = "none";
     document.getElementById("questionThree").innerHTML =
                         `<div class="quizspan">
-                        <p class="question">3) What do bee's collect from flowers?</p>
+                        <p class="question">3. What do bee's collect from flowers?</p>
                         <input type="radio" id="mc5" name="question3" value="Pollen" class="answer">Pollen<br>
                         <input type="radio" id="mc6" name="question3" value="Honey" class="answer">Honey<br>
                      </div>
@@ -95,21 +103,9 @@ function quizNextThree() {
     document.getElementById("questionThree").style.display = "none";
     document.getElementById("questionFour").innerHTML =
                         `<div class="quizspan">
-                        <p class="question">4) How many eggs does a Queen Bee lay a day? </p>
+                        <p class="question">4. How many eggs does a Queen Bee lay a day? </p>
                         <input type="radio" id="mc7" name="question4" value="150" class="answer">150<br>
                         <input type="radio" id="mc8" name="question4" value="1,500" class="answer">1,500<br>
                      </div>
                      <input type="button" id="button" class="stylish-button" value="Results" onclick= "check()" class="btn btn-info">`;
 }
-/*
-function check() {
-    document.getElementById("quiz-next-three").style.display = "none";
-    document.getElementById("questionThree").style.display = "none";
-    document.getElementById("questionFour").innerHTML =
-                        `<div class="quizspan">
-                        <p class="question">4) How many eggs does a Queen Bee lay a day? </p>
-                        <input type="radio" id="mc7" name="question4" value="150" class="answer">150<br>
-                        <input type="radio" id="mc8" name="question4" value="1,500" class="answer">1,500<br>
-                     </div>
-                     <input type="button" id="button" class="stylish-button" value="Results" onclick= "check()" class="btn btn-info">`;
-}*/

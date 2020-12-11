@@ -57,7 +57,19 @@ function fillJar() {
     console.log(totalHoney);
 } else if (totalHoney > 100) {
     swal("Please fill jar to exactly 100%");
-}
+} if (totalHoney === 100) {
+    document.getElementById("checkout-quiz-button").innerHTML = `<button onclick="verify()" id="quiz-page-button" class="stylish-button rounded-pill main-page-button-text">Try our quiz for a discount!</button>`;
+    }
+
+};
+
+function verify() {
+    if (totalHoney === 100) {
+        document.getElementById("quiz-page-button").onclick = function () {
+        location.href = "quiz.html";}
+    } else if (totalHoney !== 100){
+        swal("Please fill jar to exactly 100%");
+    }
 };
 
 function fillListOne() {
@@ -121,10 +133,16 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("dungarvan").innerHTML = hiveThree;
   document.getElementById("listTotal").innerHTML = totalHoney;
 });
-
+/*
+function honeyButton() {
 document.getElementById("honey-mix-button").onclick = function () {
         location.href = "honey.html";
+}
     };
+*/
+function Redirect() {
+               window.location = "honey.html";
+            };
 
 
 

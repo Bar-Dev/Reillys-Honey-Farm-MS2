@@ -106,7 +106,7 @@ body {
 
 .main-page-button {
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
 }
@@ -274,6 +274,19 @@ animation: fadeIn ease 0.5s;
     padding-right: 50px;
 }
 
+.modal-footer {
+    display: inline;
+    border-top: none;
+}
+
+.modal-header {
+    display: none;
+}
+
+.modal-specific .modal-header {
+    display: flex;
+}
+
 /*------------------------ Hives ------------------------*/
 
 .hive-icons {
@@ -333,6 +346,10 @@ animation: fadeIn ease 0.5s;
     margin-top: 100px;
 }
 
+.wall-hives {
+    width: 90%;
+}
+
 .quiz-title {
     text-align: center;
 }
@@ -365,6 +382,10 @@ animation: fadeIn ease 0.5s;
 
 .quiz-start {
     margin-top: 30px;
+}
+
+.text-center {
+    padding-top: 40px;
 }
 
 /* ----------------------Test Button--------------------*/
