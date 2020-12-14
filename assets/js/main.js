@@ -54,27 +54,19 @@ function fillJar() {
             document.getElementById("honey-fill").innerHTML = `<img id="honey" src="assets/images/${totalHoney}-full.png">`;
         }
     }, 500);
-    console.log(totalHoney);
 } else if (totalHoney > 100) {
     swal("Please fill jar to exactly 100%");
 } if (totalHoney === 100) {
     document.getElementById("checkout-quiz-button").innerHTML = `<button onclick="verify()" id="quiz-page-button" class="stylish-button rounded-pill main-page-button-text">Try our quiz for a discount!</button>`;
-    document.getElementById("quiz-page-button").onclick = function () {
-        location.href = "quiz.html";}
+   /* document.getElementById("quiz-page-button").onclick = function () {
+        location.href = "quiz.html";}*/
     }
+
+
 console.log(totalHoney);
 };
-/*
-function verify() {
-    if (totalHoney === 100) {
-        document.getElementById("quiz-page-button").onclick = function () {
-        location.href = "quiz.html";}
-    } 
-    if (totalHoney !== 100){
-        swal("Please fill jar to exactly 100%");
-    } 
-};
-*/
+
+
 function fillListOne() {
       document.getElementById("dungarvan").innerHTML = hiveOne;
       let totalArray = [0,0,0];
@@ -86,6 +78,7 @@ function fillListOne() {
         return a + b;
     }, 0);
       document.getElementById("listTotal").innerHTML = totalHoney;
+      console.log(totalHoney);
     };
 
 function fillListTwo() {
@@ -99,6 +92,7 @@ function fillListTwo() {
         return a + b;
     }, 0);
       document.getElementById("listTotal").innerHTML = totalHoney;
+      console.log(totalHoney);
     };
 
 function fillListThree() {
@@ -112,6 +106,7 @@ function fillListThree() {
         return a + b;
     }, 0);
       document.getElementById("listTotal").innerHTML = totalHoney;
+      console.log(totalHoney);
     };
 
 
@@ -147,5 +142,18 @@ function Redirect() {
                window.location = "honey.html";
             };
 
+
+
+
+function verify() {  
+    let verifyHoney;
+    verifyHoney = Number(document.getElementById("listTotal").innerHTML);
+    if (verifyHoney === 100) {
+        window.open("quiz.html", "_self");
+    } else if (verifyHoney !== 100) {
+        swal("Please fill jar to exactly 100%");
+    }
+    console.log(verifyHoney);
+};
 
 
