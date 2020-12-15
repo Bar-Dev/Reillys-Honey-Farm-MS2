@@ -337,6 +337,53 @@ animation: fadeIn ease 0.5s;
     content: "";
 }
 
+.nameTag-one {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    left: 63%;
+    bottom: 59%;
+}
+
+#hive-icon-one:hover + .nameTag-one {
+  display: block;
+  color: black;
+  background-color: white;
+  width: 20%;
+  border: 1px solid #000000;
+}
+
+.nameTag-two {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    left: 38%;
+    bottom: 51%;
+}
+
+#hive-icon-two:hover + .nameTag-two {
+  display: block;
+  color: black;
+  background-color: white;
+  width: 20%;
+  border: 1px solid #000000;
+}
+
+.nameTag-three {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    left: 23%;
+    bottom: 81%;
+}
+
+#hive-icon-three:hover + .nameTag-three {
+  display: block;
+  color: black;
+  background-color: white;
+  width: 20%;
+  border: 1px solid #000000;
+}
 
 
 /*----------------------- Quiz Page -----------------------*/
