@@ -58,11 +58,7 @@ function fillJar() {
     swal("Please fill jar to exactly 100%");
 } if (totalHoney === 100) {
     document.getElementById("checkout-quiz-button").innerHTML = `<button onclick="verify()" id="quiz-page-button" class="stylish-button rounded-pill main-page-button-text">Try our quiz for a discount!</button>`;
-   /* document.getElementById("quiz-page-button").onclick = function () {
-        location.href = "quiz.html";}*/
     }
-
-
 console.log(totalHoney);
 };
 
@@ -155,5 +151,6 @@ function verify() {
     }
     console.log(verifyHoney);
 };
+
 
 

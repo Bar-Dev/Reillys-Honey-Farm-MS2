@@ -53,6 +53,7 @@ fullReset.addEventListener('click', function() {
 
 //https://stackoverflow.com/questions/40371972/resetting-a-quiz-with-reset-button
 
+
 function startQuiz() {
     document.getElementById("startButton").style.display = "none";
     document.getElementById("fullReset").style.visibility = "hidden";
@@ -65,7 +66,7 @@ function startQuiz() {
                      <div class="quiz-next">
 											<button type="button" class="stylish-button" onclick="quizNextOne()" id="quiz-next-one" class="btn btn-default">Next</button>
 										</div>`;
-}
+};
 
 function quizNextOne() {
     document.getElementById("quiz-next-one").style.display = "none";
@@ -80,7 +81,7 @@ function quizNextOne() {
                      <div class="quiz-nextOne">
 											<button type="button" class="stylish-button" onclick="quizNextTwo()" id="quiz-next-two" class="btn btn-default">Next</button>
 										</div>`;
-}
+};
 
 function quizNextTwo() {
     document.getElementById("quiz-next-two").style.display = "none";
@@ -95,7 +96,7 @@ function quizNextTwo() {
                      <div class="quiz-nextTwo">
 											<button type="button" class="stylish-button" onclick="quizNextThree()" id="quiz-next-three" class="btn btn-default">Next</button>
 										</div>`;
-}
+};
 
 function quizNextThree() {
     document.getElementById("quiz-next-three").style.display = "none";
@@ -108,4 +109,5 @@ function quizNextThree() {
                         <input type="radio" id="mc8" name="question4" value="1,500" class="answer">1,500<br>
                      </div>
                      <input type="button" id="button" class="stylish-button" value="Results" onclick= "check()" class="btn btn-info">`;
-}
+};
+
