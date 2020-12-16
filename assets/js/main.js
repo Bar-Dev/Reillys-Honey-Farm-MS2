@@ -53,7 +53,7 @@ function fillJar() {
             clearInterval(honeyInterval);
             document.getElementById("honey-fill").innerHTML = `<img id="honey" src="assets/images/${totalHoney}-full.png">`;
         }
-    }, 500);
+    }, 200);
 } else if (totalHoney > 100) {
     swal("Please fill jar to exactly 100%");
 } if (totalHoney === 100) {
@@ -75,6 +75,8 @@ function fillListOne() {
     }, 0);
       document.getElementById("listTotal").innerHTML = totalHoney;
       console.log(totalHoney);
+    fillJar();
+    
     };
 
 function fillListTwo() {
@@ -89,6 +91,7 @@ function fillListTwo() {
     }, 0);
       document.getElementById("listTotal").innerHTML = totalHoney;
       console.log(totalHoney);
+      fillJar();
     };
 
 function fillListThree() {
@@ -103,6 +106,7 @@ function fillListThree() {
     }, 0);
       document.getElementById("listTotal").innerHTML = totalHoney;
       console.log(totalHoney);
+      fillJar();
     };
 
 
