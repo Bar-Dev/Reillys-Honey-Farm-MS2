@@ -41,9 +41,6 @@
                         <a class="nav-link" href="honey.html">Honey</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="quiz.html">Quiz</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#signUpModal">Sign Up</a>
                     </li>
                 </ul>
@@ -338,10 +335,10 @@
                     <h2 id="no-top-margin">Modelligo Hives:</h2>
                     <h5>Fill of Honey - <span id="modelligo"></span>%</h5>
 
-                    <h2>Cappagh Hives</h2>
+                    <h2>Cappagh Hives:</h2>
                     <h5>Fill of Honey - <span id="cappagh"></span>%</h5>
 
-                    <h2>Dungarvan Hives</h2>
+                    <h2>Dungarvan Hives:</h2>
                     <h5>Fill of Honey - <span id="dungarvan"></span>%</h5>
 
                     <h3><strong>Total Amount: <span id="listTotal"></span>%</strong></h3>
@@ -353,6 +350,43 @@
     </div>
     <div id="checkout-quiz-button">
     </div>
+
+    <div class="quiz-title">
+                <h1>The honey Quiz</h1>
+                <h4>Win 10% discount on your order by completing our Quiz correctly</h4>
+            </div>
+            
+         <div class="container quiz-section-style" id="quiz-section">
+            <div class="row">
+               <div class="col-md-12 text-center">
+                  <div class="quiz-start">
+											<button type="button" onclick="startQuiz()" id="startButton" class="btn btn-default stylish-button">Let's get Buzzing!</button>
+										</div>
+                                        
+                  <form id="quiz" name="quiz" class="quiz-style">
+                     
+                     <div id="questionOne" class="question-box">
+                     
+                     </div>
+                     
+                     <div id="questionTwo" class="question-box">
+                     </div>
+
+                     <div id="questionThree" class="question-box">
+                     </div>
+
+                     <div id="questionFour" class="question-box">
+                     </div>
+                     
+                  </form> 
+                  <div id="after_submit">
+                     <p id="number_correct"></p>
+                     <div id="fullReset">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
 
 
 

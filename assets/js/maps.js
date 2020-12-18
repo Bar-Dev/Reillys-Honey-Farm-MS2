@@ -7,21 +7,33 @@ function initMap() {
         }
     });
 
-    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    // The location of Modelligo Hives
+  const markerOne = { lat: 52.146036, lng: -7.807280 };
+  const markerA = new google.maps.Marker({
+    position: markerOne,
+    map: map,
+    label: "M",
+    title: "Modelligo Hives"
+  });
 
-    var locations = [
-        { lat: 52.132755, lng: -7.7095661 },
-        { lat: 52.101602, lng: -7.749043 },
-        { lat: 52.111792, lng: -7.625117 }
-        
-    ];
+    // The location of Cappagh Hives
+  const markerTwo = { lat: 52.101602, lng: -7.749043 };
+  const markerB = new google.maps.Marker({
+    position: markerTwo,
+    map: map,
+    label: "C",
+    title: "Cappagh Hives"
+  });
 
-    var markers = locations.map(function(location, i) {
-        return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-        });
-    });
+
+   // The location of Modelligo Hives
+  const markerThree = { lat: 52.111792, lng: -7.625117 };
+  const markerC = new google.maps.Marker({
+    position: markerThree,
+    map: map,
+    label: "D",
+    title: "Dungarvan Hives"
+  });
 
     var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
 }

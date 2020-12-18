@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    color: #545b62;
 }
 .main-headings {
     margin: 0 auto;
@@ -63,7 +64,7 @@ body {
 
 .home-image {
     height: auto;
-    max-width: 100%;
+    width: 100%;
     margin-top: 82px;
 
     animation-name: home-zoom;
@@ -285,6 +286,14 @@ animation: fadeIn ease 0.5s;
 
 .modal-specific .modal-header {
     display: flex;
+}
+
+.empty-jar {
+    display: none;
+}
+
+.quiz-start .btn {
+    color: #545b62;
 }
 
 /*------------------------ Hives ------------------------*/
@@ -518,6 +527,73 @@ footer {
 /*---------------------- Media Queries ------------------------*/
 
 /* ---- Break one ---- */
+@media(min-width: 1500px) {
+    .navbar > a > h1 {
+    margin-left: 45vw;
+    transform: translate(-50%);
+    }  
+    .hero-video-content {
+    height: 600px;
+    } 
+    .hive-fills h2{
+    font-size: 33px;
+    margin-top: 38px;
+    }
+    .hive-fills h3{
+    font-size: 30px;
+
+    }
+    .hive-fills h5{
+    font-size: 25px;
+    font-weight: 300;
+    }
+    .honey-text {
+    padding-left: 40px;
+    }
+    .stylish-button {
+    width: 250px;
+    }
+    .quiz-start .btn {
+    font-size: 2rem;
+    }
+    .quizspan {
+    border: 1px solid #d4dc52;
+    border-radius: 100px;
+    max-width: 400px;
+    height: 200px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #1b1b19;
+}
+}
+
+@media(min-width: 1227px) {
+    .navbar > a > h1 {
+    margin-left: 45vw;
+    transform: translate(-50%);
+    }  
+    .hero-video-content {
+    height: 600px;
+    } 
+    .hive-fills h2{
+    font-size: 33px;
+    margin-top: 38px;
+    }
+    .hive-fills h3{
+    font-size: 30px;
+
+    }
+    .hive-fills h5{
+    font-size: 25px;
+    font-weight: 300;
+    }
+    .honey-text {
+    padding-left: 40px;
+    }
+}
+
+
 @media(max-width: 1226px) {
     .navbar > a > h1 {
     margin-left: 45vw;
@@ -527,7 +603,7 @@ footer {
     height: 600px;
     } 
     .hive-fills h2{
-    font-size: 25px;
+    font-size: 30px;
     }
     .hive-fills h3{
     font-size: 22px;
@@ -547,7 +623,10 @@ footer {
     .navbar > a > h1 {
     margin-left: 38vw;
     transform: translate(-25%);
-    }  
+    } 
+    .hive-fills h2{
+    font-size: 28px;
+    } 
     .hero-video-content {
     height: 500px;
     } 
@@ -578,7 +657,7 @@ footer {
     max-width: 850px !important;
     }
     .hive-fills h2{
-    font-size: 15px;
+    font-size: 23px;
     }
     .hive-fills h5{
     font-size: 12px
@@ -595,6 +674,10 @@ footer {
     }
     .how-it-works-title h2 {
     font-size: 25px;
+    }
+    .hive-honey-map > img {
+    max-width: 95%;
+    height: auto;
     }
 }
 
@@ -802,3 +885,4 @@ footer {
     margin-top: 100px !important;
 }
 }
+
