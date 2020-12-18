@@ -132,9 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let totalHoney = startHoney.reduce(function (a, b) {
         return a + b;
     }, 0);
-    document.getElementById("listTotal").innerHTML = totalHoney;
-
-
+   
     document.getElementById("modelligo").innerHTML = hiveOne;
     document.getElementById("cappagh").innerHTML = hiveTwo;
     document.getElementById("dungarvan").innerHTML = hiveThree;
