@@ -527,11 +527,19 @@ footer {
 /*---------------------- Media Queries ------------------------*/
 
 /* ---- Break one ---- */
-@media(min-width: 1500px) {
+
+@media(max-width: 1980px) {
     .navbar > a > h1 {
     margin-left: 45vw;
     transform: translate(-50%);
-    }  
+    font-size: 50px;  
+    } 
+    .bee-nav img {
+    top: 0px;
+    } 
+    .navbar-dark .navbar-nav .nav-link {
+    font-size: 25px;
+    }
     .hero-video-content {
     height: 600px;
     } 
@@ -568,7 +576,7 @@ footer {
 }
 }
 
-@media(min-width: 1227px) {
+@media(max-width: 1500px) {
     .navbar > a > h1 {
     margin-left: 45vw;
     transform: translate(-50%);
