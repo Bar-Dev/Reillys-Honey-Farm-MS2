@@ -42,7 +42,7 @@ body {
 }
 
 .bee-nav img {
-    width: 75px;
+    width: 65px;
     height: auto;
     top: -9px;
     position: relative;
@@ -532,7 +532,7 @@ footer {
     .navbar > a > h1 {
     margin-left: 45vw;
     transform: translate(-50%);
-    font-size: 50px;  
+    font-size: 40px;  
     } 
     .bee-nav img {
     top: 0px;
@@ -571,9 +571,12 @@ footer {
     height: 200px;
     padding-top: 30px;
     margin-bottom: 20px;
-    font-size: 20px;
-    color: #1b1b19;
-}
+    font-size: 18px;
+    color: #300448;
+    }
+    .quizspan p {
+    margin-top: 20px;
+    }
 }
 
 @media(max-width: 1500px) {
@@ -621,6 +624,9 @@ footer {
     }
     .honey-text {
     padding-left: 50px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+    font-size: 20px;
     }
 }
 

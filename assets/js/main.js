@@ -172,7 +172,7 @@ function check() {
     }
 
     if (correct < 4) {
-        document.getElementById("fullReset").innerHTML = `<button  class="stylish-button">Try Again</button>`;
+        document.getElementById("fullReset").innerHTML = `<button class="stylish-button">Try Again</button>`;
     } else if (correct === 4) {
         swal({
             title: "Well Done!",
