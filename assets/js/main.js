@@ -172,7 +172,7 @@ function check() {
     }
 
     if (correct < 4) {
-        document.getElementById("fullReset").innerHTML = `<button class="stylish-button">Try Again</button>`;
+        document.getElementById("fullReset").innerHTML = `<button onclick="quizReset()" value="Reset" class="stylish-button">Try Again</button>`;
     } else if (correct === 4) {
         swal({
             title: "Well Done!",
@@ -189,19 +189,21 @@ function check() {
 }
 
 //Refreshes the page so the user can start again with the score resetting to zero
-var fullReset = document.getElementById('fullReset');
+function quizReset() {
+    document.getElementById("startButton").innerHTML =
+            `<div class="quizspan">
+                        <p class="question">1. When are bee's most active?</p>
+                        <input type="radio" id="mc1" name="question1" value="Mar-Sep" class="answer">Mar-Sep</input><br>
+                        <input type="radio" id="mc2" name="question1" value="Sep-Mar" class="answer">Sep-Mar</input><br>
+                     </div>
+                     <div class="quiz-next">
+											<button type="button" class="stylish-button" onclick="quizNextOne()" id="quiz-next-one" class="btn btn-default">Next</button>
+                                        </div>`;
+    console.log("correct");
+}
 
-fullReset.addEventListener('click', function () {
-    location.reload();
-    let correct = document.getElementById("listTotal");
-    localStorage.setItem = correct;
-    
-}, false);
 
-// Sources of guidance used: 
-
-//https://stackoverflow.com/questions/40371972/resetting-a-quiz-with-reset-button
-
+// Each question continues on to next
 
 function startQuiz() {
     let verifyHoney;

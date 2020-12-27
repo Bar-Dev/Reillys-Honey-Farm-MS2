@@ -158,7 +158,7 @@ Links to the mockups can be found [here](https://www.figma.com/file/B83dqKY1SnY7
 proposal for each page. I tried my best to adhere to the inital proposal only changing things if seen as an additional improvement to the overall
 website.
 
-If you cannot access the mockups via the link above you can view them [here]<!--(https://github.com/Bar-Dev//workspace/Reillys-Honey-Farm-MS2/documentation/wireframes)-->
+If you cannot access the mockups via the link above you can view them [here](https://github.com/Bar-Dev//workspace/Reillys-Honey-Farm-MS2/documentation/wireframes)
 
 
 ## 2. Features
@@ -318,6 +318,7 @@ All content in this web app was written by me or code that was altered or acknow
 * [CSS-Tricks](https://css-tricks.com/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Codepen](https://codepen.io/jouanmarcel/pen/RwweKqb)
+* [Swal Alerts](https://sweetalert.js.org/guides/)
 
 #### I received advice and encouragement from
    * Seun Owonikoko (Mentor)
