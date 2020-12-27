@@ -158,7 +158,7 @@ Links to the mockups can be found [here](https://www.figma.com/file/B83dqKY1SnY7
 proposal for each page. I tried my best to adhere to the inital proposal only changing things if seen as an additional improvement to the overall
 website.
 
-If you cannot access the mockups via the link above you can view them [here]<!--(https://github.com/Bar-Dev/Greenway/tree/master/documentation/wireframes)-->
+If you cannot access the mockups via the link above you can view them [here]<!--(https://github.com/Bar-Dev//workspace/Reillys-Honey-Farm-MS2/documentation/wireframes)-->
 
 
 ## 2. Features
@@ -258,11 +258,11 @@ for purchasing of the Honey.
 
 ## 4. Testing
 
-Full documentation of all testing can be viewed [here](https://github.com/Bar-Dev/Greenway/tree/master/testing.md)
+Full documentation of all testing can be viewed [here](https://github.com/Bar-Dev/Reillys-Honey-Farm-MS2/tree/master/testing.md)
 
 ## 5. Deployment
 
-A live demo of the website can be reached [here](https://bar-dev.github.io/Greenway)
+A live demo of the website can be reached [here](https://bar-dev.github.io/Reillys-Honey-Farm-MS2)
 
 This web app was developed in Gitpod and pushed to the remote repository, GitHub. The live page is hosted on GitHub Pages. 
 
@@ -275,7 +275,7 @@ This web app was developed in Gitpod and pushed to the remote repository, GitHub
 ### Hosting on GitHub Pages
 
 * Log into GitHub.
-* From the list of repositories choose [The Greenway](https://github.com/Bar-Dev/Greenway).
+* From the list of repositories choose [Reillys-Honey-Farm-MS2](https://github.com/Bar-Dev/Reillys-Honey-Farm-MS2).
 * Go to settings.
 * Scroll down to GitHub Pages section.
 * Select as a source **master branch**.
@@ -294,21 +294,15 @@ All content in this web app was written by me or code that was altered or acknow
 ### Media
 
 **Images**
-   * [Waterford Greenway Bike Hire](https://www.waterfordgreenwaybikehire.com/)
-   * [The Park Hotel](https://www.parkhoteldungarvan.com/waterford-greenway.html)
-   * [The Irish Times](https://www.irishtimes.com/life-and-style/travel/ireland/waterford-s-46km-greenway-opens-for-cyclists-and-walkers-1.3022201)
-   * [Nire Valley Eco Camp](https://nirevalleyecocamp.com/waterford-greenway-bike-hire/)
-   * [Outsider.ie](https://outsider.ie/ireland/waterford-greenway/)
-   * [USI.ie](https://usi.ie/waterford-city-night-view/)
-   * [Irish Cycle](https://irishcycle.com/2016/11/08/review-images-waterford-greenway/waterford-greenway-ballyvoyle-tunnel-2/)
-   * [Deise Greenway](https://www.facebook.com/deise.greenway/?hc_ref=ARQP6-oj4Su7JsDCeZf7mrUEBj4BDpJlfvKaKpvvRfhJb_HOkt2H1RMqUbIpL8hdp_0&fref=nf&__tn__=kC-R)
-   * [Bizlocator](https://bizlocator.ie/listings/omahonys-bar-shop/)
-   * [Coach House Coffee](https://www.coachhousecoffee.ie/)
-   * [CNN](https://edition.cnn.com/2019/06/03/health/coffee-heart-health-arteries-scli-intl-gbr/index.html)
+   * [Blackberry Flowers](https://travelingrainvilles.typepad.com/traveling_home/2011/08/blackberry-bushes.html)
+   * [Honey Bee](https://freepngimg.com/png/11204-bee-png-5)
+   * [Honey Jars](https://www.slacklist.info/best-honey-jar/)
+   * [Honey Map](https://www.google.ie/maps)
+   * [Lavender](https://www.almanac.com/plant/lavender)
+   * [Rosemary](https://i.ytimg.com/vi/uEULyFD8OdI/hqdefault.jpg)
 
 **Videos**
-   * [Daithi Ó Raghallaigh](https://www.youtube.com/watch?v=YCWfeD84XSo&feature=youtu.be)
-   * [Deise Greenway](https://www.facebook.com/deise.greenway/)
+   * [Bees Gif](https://www.pexels.com/search/videos/bees/)
 
 ### Acknowledgements
 
@@ -323,6 +317,7 @@ All content in this web app was written by me or code that was altered or acknow
 * [Stack overflow](https://stackoverflow.com/)
 * [CSS-Tricks](https://css-tricks.com/)
 * [Bootstrap](https://getbootstrap.com/)
+* [Codepen](https://codepen.io/jouanmarcel/pen/RwweKqb)
 
 #### I received advice and encouragement from
    * Seun Owonikoko (Mentor)

@@ -5,7 +5,7 @@ let hiveThree;
 let honeyInterval;
 let totalHoney;
 
-
+// EventListeners for changes in Honey Quantities
 const cappagh = document.getElementById('hiveOne');
 cappagh.addEventListener('change', event => {
     hiveOne = (event.target.value);
@@ -21,7 +21,7 @@ dungarvan.addEventListener('change', event => {
     hiveThree = (event.target.value);
 });
 
-
+// Fills the Honey Jar to the amount selected
 function fillJar() {
     let totalArray = ['A', 'B', 'C'];
     totalArray[0] = Number(hiveOne);
@@ -193,6 +193,9 @@ var fullReset = document.getElementById('fullReset');
 
 fullReset.addEventListener('click', function () {
     location.reload();
+    let correct = document.getElementById("listTotal");
+    localStorage.setItem = correct;
+    
 }, false);
 
 // Sources of guidance used: 

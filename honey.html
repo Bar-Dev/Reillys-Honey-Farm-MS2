@@ -1,451 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+            type="text/css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Reillys Honey Farm</title>
+    </head>
+    <body>
+        <header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
-        type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Reillys Honey Farm</title>
-</head>
+            <!-- ==================== Navbar ==================== -->
 
-<body>
-    <header>
-
-        <!-- ==================== Navbar ==================== -->
-
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar-colors">
-            <a class="navbar-brand" href="index.html">
-                <div class="bee-nav">
-                    <img src="./assets/images/honey-bee.png" alt="Honey Bee">
-                </div>
-                <h1>Reilly's Honey Farm</h1>
-            </a>
-            <button class="navbar-toggler navbar-lines" type="button" data-toggle="collapse"
-                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar-colors">
+                <a class="navbar-brand" href="index.html">
+                    <div class="bee-nav">
+                        <img src="./assets/images/honey-bee.png" alt="Honey Bee">
+                    </div>
+                    <h1>Reilly's Honey Farm</h1>
+                </a>
+                <button class="navbar-toggler navbar-lines" type="button" data-toggle="collapse"
+                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="honey.html">Honey</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="modal" data-target="#signUpModal">Sign Up</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="honey.html">Honey</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#signUpModal">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-    <!-- ==================== Main Image ==================== -->
+        <!-- ==================== Main Image ==================== -->
 
-    <section>
         <div>
             <img class="home-image" src="./assets/images/honey-jars.jpg" alt="Jars of Honey">
         </div>
-    </section>
 
-    <!-- ==================== Main Content ==================== -->
+        <!-- ==================== Main Content ==================== -->
 
-    <div class="container-fluid">
-        <div class="row honey-content honey-text">
-            <div class="col-sm-6 make-title">
-                <h2>Make your own taste!</h2>
-                <div class="title-break"><br>
+        <div class="container-fluid">
+            <div class="row honey-content honey-text">
+                <div class="col-sm-6 make-title">
+                    <h2>Make your own taste!</h2>
+                    <div class="title-break"><br>
+                    </div>
+                    <p>
+                        At Reillys Honey Farm we believe in letting the
+                        customer choose what flavour they think tastes
+                        best.
+                        That's why we have introduced are unique idea to
+                        allow you to make your own special personal taste.
+                    </p>
                 </div>
-                <p>
-                    At Reillys Honey Farm we believe in letting the
-                    customer choose what flavour they think tastes
-                    best.
-                    That's why we have introduced are unique idea to
-                    allow you to make your own special personal taste.
-                </p>
-            </div>
-            <div class="col-sm-6 how-it-works-title">
-                <h2>How it works:</h2>
-                <div class="title-break"><br>
+                <div class="col-sm-6 how-it-works-title">
+                    <h2>How it works:</h2>
+                    <div class="title-break"><br>
+                    </div>
+                    <ol>
+                        <li>Click on your desired location</li>
+                        <li>Select the percentage of the Jar you want filled</li>
+                        <li>View your Jar below to see when full</li>
+                        <li>Proceed to Checkout</li>
+                        <li>Enjoy!</li>
+                    </ol>
                 </div>
-                <ol>
-                    <li>Click on your desired location</li>
-                    <li>Select the percentage of the Jar you want filled</li>
-                    <li>View your Jar below to see when full</li>
-                    <li>Proceed to Checkout</li>
-                    <li>Enjoy!</li>
-                </ol>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row honey-content">
-            <div class="col-md-6">
-                <div class="hive-honey-map">
-                    <img src="./assets/images/honey-map.png" alt="Honey Map">
+        <div class="container-fluid">
+            <div class="row honey-content">
+                <div class="col-md-6">
+                    <div class="hive-honey-map">
+                        <img src="./assets/images/honey-map.png" alt="Honey Map">
 
-                    <!--  Dungarvan Hives -->
-                    <button id="hive-icon-one" class="hive-icons" type="button" data-toggle="modal"
-                        data-target="#iconOne">
+                        <!--  Dungarvan Hives -->
+
+                        <button id="hive-icon-one" class="hive-icons" type="button" data-toggle="modal"
+                            data-target="#iconOne">
                         <strong><img width="25" height="25" src="./assets/images/honey-bee.png"
-                                alt="Honey Bee"></strong>
-                    </button>
-                    <div class="nameTag-one rounded-pill">Dungarvan</div>
-                    <div class="modal fade" id="iconOne" tabindex="-1" role="dialog" aria-labelledby="iconOne"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                </div>
-                                <div class="modal-body">
-                                    <!-- Indicators -->
-                                    <div id="modal-icon-one" class="image-style" data-interval="false">
-                                        <div class="iconImage">
-                                            <div class="modal-box active">
-                                                <div class="container-fluid">
-                                                    <div class="row">
-                                                        <div class="col-sm-6 col-12">
-                                                            <h2>Dungarvan Hives</h2><br>
-
-                                                            <form>
-                                                                <fieldset>
-                                                                    <legend>How much would you like from here?</legend>
-                                                                    <p>
-                                                                        <label>Select Amount</label>
-                                                                        <select id="hiveOne">
-                                                                            <option value="0" selected>0%</option>
-                                                                            <option value="10">10%</option>
-                                                                            <option value="20">20%</option>
-                                                                            <option value="30">30%</option>
-                                                                            <option value="40">40%</option>
-                                                                            <option value="50">50%</option>
-                                                                            <option value="60">60%</option>
-                                                                            <option value="70">70%</option>
-                                                                            <option value="80">80%</option>
-                                                                            <option value="90">90%</option>
-                                                                            <option value="100">100%</option>
-                                                                        </select>
-                                                                    </p>
-                                                                </fieldset>
-
-                                                            </form>
-                                                            <div class="modal-footer">
-                                                            <button type="button" onclick="fillListOne()"
-                                                                class="btn btn-default stylish-button"
-                                                                data-dismiss="modal">Select</button>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="col-sm-6 col-12">
-                                                        <img src="./assets/images/rosemary.jpg" class="d-block w-100"
-                                                            alt="Lavender Fields">
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
+                            alt="Honey Bee"></strong>
+                        </button>
+                        <div class="nameTag-one rounded-pill">Dungarvan</div>
+                        <div class="modal fade" id="iconOne" tabindex="-1" role="dialog" aria-labelledby="iconOne"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-hidden="true">&times;</button>
                                     </div>
-                                </div>
-                                
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--  Cappagh Hives -->
-
-                    <button id="hive-icon-two" class="hive-icons" type="button" data-toggle="modal"
-                        data-target="#iconTwo">
-                        <strong><img width="25" height="25" src="./assets/images/honey-bee.png"
-                                alt="Honey Bee"></strong>
-                    </button>
-                    <div class="nameTag-two rounded-pill">Cappagh</div>
-                    <div class="modal fade" id="iconTwo" tabindex="-1" role="dialog" aria-labelledby="iconTwo"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                </div>
-                                <div class="modal-body">
-                                    <!-- Indicators -->
-                                    <div id="modal-icon-Two" class="image-style" data-interval="false">
-                                        <div class="iconImage">
-                                            <div class="modal-box active">
-                                                <div class="container-fluid">
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            <h2>Cappagh Hives</h2><br>
-
-                                                            <form>
-                                                                <fieldset>
-                                                                    <legend>How much would you like from here?</legend>
-                                                                    <p>
-                                                                        <label>Select Amount</label>
-                                                                        <select id="hiveTwo">
-                                                                            <option value="0">0%</option>
-                                                                            <option value="10">10%</option>
-                                                                            <option value="20">20%</option>
-                                                                            <option value="30">30%</option>
-                                                                            <option value="40">40%</option>
-                                                                            <option value="50">50%</option>
-                                                                            <option value="60">60%</option>
-                                                                            <option value="70">70%</option>
-                                                                            <option value="80">80%</option>
-                                                                            <option value="90">90%</option>
-                                                                            <option value="100">100%</option>
-                                                                        </select>
-                                                                    </p>
-                                                                </fieldset>
-
-                                                            </form>
-                                                            <div class="modal-footer">
-                                                            <button type="button" onclick="fillListTwo()"
-                                                                class="btn btn-default stylish-button"
-                                                                data-dismiss="modal">Select</button>
-                                                        </div>
-
-
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <img src="./assets/images/blackberry-flowers.jpg"
-                                                            class="d-block w-100" alt="Rosemary Flowers">
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--  Modelligo Hives -->
-
-                    <button id="hive-icon-three" class="hive-icons" type="button" data-toggle="modal"
-                        data-target="#iconThree">
-                        <strong><img width="25" height="25" src="./assets/images/honey-bee.png"
-                                alt="Honey Bee"></strong>
-                    </button>
-                    <div class="nameTag-three rounded-pill">Modelligo</div>
-                    <div class="modal fade" id="iconThree" tabindex="-1" role="dialog" aria-labelledby="iconThree"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                </div>
-                                <div class="modal-body">
-                                    <!-- Indicators -->
-                                    <div id="modal-icon-three" class="image-style" data-interval="false">
-                                        <div class="iconImage">
-                                            <div class="modal-box active">
-                                                <div class="container-fluid">
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            <h2>Modelligo Hives</h2><br>
-
-                                                            <form>
-                                                                <fieldset>
-                                                                    <legend>How much would you like from here?</legend>
-                                                                    <p>
-                                                                        <label>Select Amount</label>
-                                                                        <select id="hiveThree">
-                                                                            <option value="0">0%</option>
-                                                                            <option value="10">10%</option>
-                                                                            <option value="20">20%</option>
-                                                                            <option value="30">30%</option>
-                                                                            <option value="40">40%</option>
-                                                                            <option value="50">50%</option>
-                                                                            <option value="60">60%</option>
-                                                                            <option value="70">70%</option>
-                                                                            <option value="80">80%</option>
-                                                                            <option value="90">90%</option>
-                                                                            <option value="100">100%</option>
-                                                                        </select>
-                                                                    </p>
-                                                                </fieldset>
-
-                                                            </form>
-                                                            <div class="modal-footer">
-                                                                <button type="button" onclick="fillListThree()"
-                                                                    class="btn btn-default stylish-button"
-                                                                    data-dismiss="modal">Select</button>
+                                    <div class="modal-body">
+                                        <!-- Indicators -->
+                                        <div id="modal-icon-one" class="image-style" data-interval="false">
+                                            <div class="iconImage">
+                                                <div class="modal-box active">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-sm-6 col-12">
+                                                                <h2>Dungarvan Hives</h2>
+                                                                <br>
+                                                                <form>
+                                                                    <fieldset>
+                                                                        <legend>How much would you like from here?</legend>
+                                                                        <p>
+                                                                            <label>Select Amount</label>
+                                                                            <select id="hiveOne">
+                                                                                <option value="0" selected>0%</option>
+                                                                                <option value="10">10%</option>
+                                                                                <option value="20">20%</option>
+                                                                                <option value="30">30%</option>
+                                                                                <option value="40">40%</option>
+                                                                                <option value="50">50%</option>
+                                                                                <option value="60">60%</option>
+                                                                                <option value="70">70%</option>
+                                                                                <option value="80">80%</option>
+                                                                                <option value="90">90%</option>
+                                                                                <option value="100">100%</option>
+                                                                            </select>
+                                                                        </p>
+                                                                    </fieldset>
+                                                                </form>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" onclick="fillListOne()"
+                                                                        class="btn btn-default stylish-button"
+                                                                        data-dismiss="modal">Select</button>
+                                                                </div>
                                                             </div>
-
-
+                                                            <div class="col-sm-6 col-12">
+                                                                <img src="./assets/images/rosemary.jpg" class="d-block w-100"
+                                                                    alt="Lavender Fields">
+                                                            </div>
                                                         </div>
-                                                        <div class="col-6">
-                                                            <img src="./assets/images/lavender.jpg"
-                                                                class="d-block w-100" alt="Rosemary Flowers">
-
-                                                        </div>
-
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!--  Cappagh Hives -->
+
+                        <button id="hive-icon-two" class="hive-icons" type="button" data-toggle="modal"
+                            data-target="#iconTwo">
+                        <strong><img width="25" height="25" src="./assets/images/honey-bee.png"
+                            alt="Honey Bee"></strong>
+                        </button>
+                        <div class="nameTag-two rounded-pill">Cappagh</div>
+                        <div class="modal fade" id="iconTwo" tabindex="-1" role="dialog" aria-labelledby="iconTwo"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-hidden="true">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Indicators -->
+                                        <div id="modal-icon-Two" class="image-style" data-interval="false">
+                                            <div class="iconImage">
+                                                <div class="modal-box active">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-sm-6 col-12">
+                                                                <h2>Cappagh Hives</h2>
+                                                                <br>
+                                                                <form>
+                                                                    <fieldset>
+                                                                        <legend>How much would you like from here?</legend>
+                                                                        <p>
+                                                                            <label>Select Amount</label>
+                                                                            <select id="hiveTwo">
+                                                                                <option value="0">0%</option>
+                                                                                <option value="10">10%</option>
+                                                                                <option value="20">20%</option>
+                                                                                <option value="30">30%</option>
+                                                                                <option value="40">40%</option>
+                                                                                <option value="50">50%</option>
+                                                                                <option value="60">60%</option>
+                                                                                <option value="70">70%</option>
+                                                                                <option value="80">80%</option>
+                                                                                <option value="90">90%</option>
+                                                                                <option value="100">100%</option>
+                                                                            </select>
+                                                                        </p>
+                                                                    </fieldset>
+                                                                </form>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" onclick="fillListTwo()"
+                                                                        class="btn btn-default stylish-button"
+                                                                        data-dismiss="modal">Select</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 col-12">
+                                                                <img src="./assets/images/blackberry-flowers.jpg"
+                                                                    class="d-block w-100" alt="Rosemary Flowers">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  Modelligo Hives -->
+
+                        <button id="hive-icon-three" class="hive-icons" type="button" data-toggle="modal"
+                            data-target="#iconThree">
+                        <strong><img width="25" height="25" src="./assets/images/honey-bee.png"
+                            alt="Honey Bee"></strong>
+                        </button>
+                        <div class="nameTag-three rounded-pill">Modelligo</div>
+                        <div class="modal fade" id="iconThree" tabindex="-1" role="dialog" aria-labelledby="iconThree"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-hidden="true">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Indicators -->
+                                        <div id="modal-icon-three" class="image-style" data-interval="false">
+                                            <div class="iconImage">
+                                                <div class="modal-box active">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-sm-6 col-12">
+                                                                <h2>Modelligo Hives</h2>
+                                                                <br>
+                                                                <form>
+                                                                    <fieldset>
+                                                                        <legend>How much would you like from here?</legend>
+                                                                        <p>
+                                                                            <label>Select Amount</label>
+                                                                            <select id="hiveThree">
+                                                                                <option value="0">0%</option>
+                                                                                <option value="10">10%</option>
+                                                                                <option value="20">20%</option>
+                                                                                <option value="30">30%</option>
+                                                                                <option value="40">40%</option>
+                                                                                <option value="50">50%</option>
+                                                                                <option value="60">60%</option>
+                                                                                <option value="70">70%</option>
+                                                                                <option value="80">80%</option>
+                                                                                <option value="90">90%</option>
+                                                                                <option value="100">100%</option>
+                                                                            </select>
+                                                                        </p>
+                                                                    </fieldset>
+                                                                </form>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" onclick="fillListThree()"
+                                                                        class="btn btn-default stylish-button"
+                                                                        data-dismiss="modal">Select</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 col-12">
+                                                                <img src="./assets/images/lavender.jpg"
+                                                                    class="d-block w-100" alt="Rosemary Flowers">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- End of test icons-->
+                <!-- End icons-->
 
-            <div class="col-md-3 col-sm-6 col-6">
-
-                <div class="honey-jar">
-
-
-                    <img id="outer-jar" src="./assets/images/outer-jar.png" alt="Honey Jar">
-                    <img id="inner-jar" src="./assets/images/inner-jar.png" alt="Honey Jar">
-
-                    <div id="honey-fill">
+                <div class="col-md-3 col-sm-6 col-6">
+                    <div class="honey-jar">
+                        <img id="outer-jar" src="./assets/images/outer-jar.png" alt="Honey Jar">
+                        <img id="inner-jar" src="./assets/images/inner-jar.png" alt="Honey Jar">
+                        <div id="honey-fill">
+                        </div>
                     </div>
-
                 </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-6 hive-content-padding">
-                <div class="hive-fills">
-                    <h2 id="no-top-margin">Modelligo Hives:</h2>
-                    <h5>Fill of Honey - <span id="modelligo"></span>%</h5>
-
-                    <h2>Cappagh Hives:</h2>
-                    <h5>Fill of Honey - <span id="cappagh"></span>%</h5>
-
-                    <h2>Dungarvan Hives:</h2>
-                    <h5>Fill of Honey - <span id="dungarvan"></span>%</h5>
-
-                    <h3><strong>Total Amount: <span id="listTotal"></span>%</strong></h3>
-                    <br>
-                    <!-- <button onclick="fillJar()" class="stylish-button rounded-pill">Fill Jar</button> -->
+                <div class="col-md-3 col-sm-6 col-6 hive-content-padding">
+                    <div class="hive-fills">
+                        <h2 id="no-top-margin">Modelligo Hives:</h2>
+                        <h5>Fill of Honey - <span id="modelligo"></span>%</h5>
+                        <h2>Cappagh Hives:</h2>
+                        <h5>Fill of Honey - <span id="cappagh"></span>%</h5>
+                        <h2>Dungarvan Hives:</h2>
+                        <h5>Fill of Honey - <span id="dungarvan"></span>%</h5>
+                        <h3><strong>Total Amount: <span id="listTotal"></span>%</strong></h3>
+                        <br>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="checkout-quiz-button">
-    </div>
-
-    <div class="quiz-title">
-                <h1>The honey Quiz</h1>
-                <h4>Win 10% discount on your order by completing our Quiz correctly</h4>
-            </div>
-            
-         <div class="container quiz-section-style" id="quiz-section">
+        <div id="checkout-quiz-button">
+        </div>
+        <div class="quiz-title">
+            <h1>The honey Quiz</h1>
+            <h4>Win 10% discount on your order by completing our Quiz correctly</h4>
+        </div>
+        <div class="container quiz-section-style" id="quiz-section">
             <div class="row">
-               <div class="col-md-12 text-center">
-                  <div class="quiz-start">
-											<button type="button" onclick="startQuiz()" id="startButton" class="btn btn-default stylish-button">Let's get Buzzing!</button>
-										</div>
-                                        
-                  <form id="quiz" name="quiz" class="quiz-style">
-                     
-                     <div id="questionOne" class="question-box">
-                     
-                     </div>
-                     
-                     <div id="questionTwo" class="question-box">
-                     </div>
-
-                     <div id="questionThree" class="question-box">
-                     </div>
-
-                     <div id="questionFour" class="question-box">
-                     </div>
-                     
-                  </form> 
-                  <div id="after_submit">
-                     <p id="number_correct"></p>
-                     <div id="fullReset">
-                     </div>
-                  </div>
-               </div>
+                <div class="col-md-12 text-center">
+                    <div class="quiz-start">
+                        <button type="button" onclick="startQuiz()" id="startButton" class="btn btn-default stylish-button">Let's get Buzzing!</button>
+                    </div>
+                    <form id="quiz" name="quiz" class="quiz-style">
+                        <div id="questionOne" class="question-box">
+                        </div>
+                        <div id="questionTwo" class="question-box">
+                        </div>
+                        <div id="questionThree" class="question-box">
+                        </div>
+                        <div id="questionFour" class="question-box">
+                        </div>
+                    </form>
+                    <div id="after_submit">
+                        <p id="number_correct"></p>
+                        <div id="fullReset">
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
+        </div>
 
+        <!-- ==================== Footer ==================== -->
 
-
-    <!-- ==================== Footer ==================== -->
-
-    <footer class="container-fluid mt-auto" id="footer-details">
-
-        <div class="row">
-            <div class="col-12 social-link-spacing">
-
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.facebook.com/">
+        <footer class="container-fluid mt-auto" id="footer-details">
+            <div class="row">
+                <div class="col-12 social-link-spacing">
+                    <ul class="list-inline social-links">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.facebook.com/">
                             <i class="fab fa-facebook-f" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://twitter.com/?lang=en">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://twitter.com/?lang=en">
                             <i class="fab fa-twitter" aria-hidden="true"></i>
                             <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://ie.linkedin.com/">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://ie.linkedin.com/">
                             <i class="fab fa-linkedin" aria-hidden="true"></i>
                             <span class="sr-only">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.pinterest.com/">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.pinterest.com/">
                             <i class="fab fa-pinterest" aria-hidden="true"></i>
                             <span class="sr-only">Pinterest</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.instagram.com/?hl=en">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.instagram.com/?hl=en">
                             <i class="fab fa-instagram" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.youtube.com/">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.youtube.com/">
                             <i class="fab fa-youtube" aria-hidden="true"></i>
                             <span class="sr-only">YouTube</span>
-                        </a>
-                    </li>
-                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
+        <!-- ==================== Modal ==================== -->
 
+        <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-specific">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Enter email to keep up to date on our Bees!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-success rounded-pill">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-</body>
-
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
 </html>

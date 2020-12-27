@@ -1,263 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+            type="text/css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Reillys Honey Farm</title>
+    </head>
+    <body>
+        <header>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-		type="text/css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
-		type="text/css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<title>Reillys Honey Farm</title>
-</head>
+            <!-- ==================== Navbar ==================== -->
 
-<body>
-	<header>
-
-		<!-- ==================== Navbar ==================== -->
-
-		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar-colors">
-			<a class="navbar-brand" href="index.html">
-                <div class="bee-nav">
-                <img src="./assets/images/honey-bee.png" alt="Honey Bee">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar-colors">
+                <a class="navbar-brand" href="index.html">
+                    <div class="bee-nav">
+                        <img src="./assets/images/honey-bee.png" alt="Honey Bee">
+                    </div>
+                    <h1>Reilly's Honey Farm</h1>
+                </a>
+                <button class="navbar-toggler navbar-lines" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="honey.html">Honey</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#signUpModal">Sign Up</a>
+                        </li>
+                    </ul>
                 </div>
-				<h1>Reilly's Honey Farm</h1>
-			</a>
-			<button class="navbar-toggler navbar-lines" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="honey.html">Honey</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" data-toggle="modal" data-target="#signUpModal">Sign Up</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+            </nav>
+        </header>
 
-	<!-- ==================== Main Image ==================== -->
+        <!-- ==================== Main Image ==================== -->
 
-	<section>
-		<div class="hero-video-content">
-			<img class="hero-video" src="./assets/images/bees.gif" type="img/gif">
-		</div>
-	</section>
-
-
-
-	<div class="container-xs opening-paragraph">
-		<h2>About Us</h2>
-		<br>
-		<p>
-			Reillys Honey Farm was formed with a unique idea in mind. Generations of Beekeepers have banded together to
-			provide customers with an experienced never witnessed before.
-			<br>
-        All the hives available to us have had the local flowers to them carefully identified and for the first time now customers can choose a mixture of honeys at different quantities to be able to make their own unique tastes.
-        </p>
-	</div>
-	<div class="container locations">
-		<div class="row">
-			<div class="col">
-				<h1 class="main-headings">Hive Locations</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<h4 class="submain-headings">Modelligo Hives</h4>
-			</div>
-		</div>
-		<div class="row location-content">
-			<div class="col-sm-6 location-images">
-				<img src="./assets/images/lavender.jpg" alt="Lavender Plants">
+        <div class="hero-video-content">
+            <img class="hero-video" src="./assets/images/bees.gif" alt="Bee's visiting Flowers">
         </div>
-				<div class="col-sm-6 click-to-map">
-					<p>
-						Our lavender flowers have rich, exceptional nectar characteristics that yield extremely fragrant
-						and floral-tasting honey. The taste of the honey also changes over the course of the blooming
-						season. Early lavender honey, for example, has a distinctly lavender bouquet. Late lavender
-						honey, on the other hand, still tastes very floral, but not as clearly identifiable as lavender.
-					</p>
+        <div class="container-xs opening-paragraph">
+            <h2>About Us</h2>
+            <br>
+            <p>
+                Reillys Honey Farm was formed with a unique idea in mind. Generations of Beekeepers have banded together to
+                provide customers with an experienced never witnessed before.
+                <br>
+                All the hives available to us have had the local flowers to them carefully identified and for the first time now customers can choose a mixture of honeys at different quantities to be able to make their own unique tastes.
+            </p>
+        </div>
+        <div class="container locations">
+            <div class="row">
+                <div class="col">
+                    <h1 class="main-headings">Hive Locations</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="submain-headings">Modelligo Hives</h4>
+                </div>
+            </div>
+            <div class="row location-content">
+                <div class="col-sm-6 location-images">
+                    <img src="./assets/images/lavender.jpg" alt="Lavender Plants">
+                </div>
+                <div class="col-sm-6 click-to-map">
+                    <p>
+                        Our lavender flowers have rich, exceptional nectar characteristics that yield extremely fragrant
+                        and floral-tasting honey. The taste of the honey also changes over the course of the blooming
+                        season. Early lavender honey, for example, has a distinctly lavender bouquet. Late lavender
+                        honey, on the other hand, still tastes very floral, but not as clearly identifiable as lavender.
+                    </p>
                     <div class="break">
-                    <br>
+                        <br>
                     </div>
                     <span>Click <a href="#map-position">here</a> to view location on map</span>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<h4 class="submain-headings">Cappagh Hives</h4>
-				</div>
-			</div>
-			<div class="row location-content">
-				<div class="col-sm-6 location-images">
-					<img src="./assets/images/blackberry-flowers.jpg" alt="Blackberry Flowers">
-        </div>
-					<div class="col-sm-6 click-to-map">
-						<p>
-							Honeybees gather nectar from wild blackberry plants in the mid-to-late spring, bringing it back to the hive where worker bees turn it into raw honey and cover it with beeswax in their honeycomb. There it is either used by the colony as food, or in our case beekeeping. 
-                            The blackberry honey we produce and ship is pure honey with no added extra sweeteners like high-fructose corn syrup. Simply – raw, unadulterated, healthy and delicious.
-						</p>
-                        <div class="break">
-                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="submain-headings">Cappagh Hives</h4>
+                </div>
+            </div>
+            <div class="row location-content">
+                <div class="col-sm-6 location-images">
+                    <img src="./assets/images/blackberry-flowers.jpg" alt="Blackberry Flowers">
+                </div>
+                <div class="col-sm-6 click-to-map">
+                    <p>
+                        Honeybees gather nectar from wild blackberry plants in the mid-to-late spring, bringing it back to the hive where worker bees turn it into raw honey and cover it with beeswax in their honeycomb. There it is either used by the colony as food, or in our case beekeeping. 
+                        The blackberry honey we produce and ship is pure honey with no added extra sweeteners like high-fructose corn syrup. Simply – raw, unadulterated, healthy and delicious.
+                    </p>
+                    <div class="break">
+                        <br>
                     </div>
-                        <span>Click <a href="#map-position">here</a> to view location on map</span>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<h4 class="submain-headings">Dungarvan Hives</h4>
-					</div>
-				</div>
-				<div class="row location-content">
-					<div class="col-sm-6 location-images">
-						<img src="./assets/images/rosemary.jpg" alt="Rosemary Flowers">
-        </div>
-						<div class="col-sm-6 click-to-map">
-							<p>
-								Rosemary Honey has a light and subtle flavour of rosemary, very delicate yet quite sweet with a soft floral note.
-                                This is a very light and pleasant herb flower honey, it has a creamy floral taste with a noticeable hint of rosemary in the flavour. It comes from the bees feeding on small flowers on osemary plant and is quite different from the tree honey which comes from sap. This honey tends to be very mild and subtle and sets quicker than others.
-							</p>
-                            <div class="break">
-                    <br>
+                    <span>Click <a href="#map-position">here</a> to view location on map</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="submain-headings">Dungarvan Hives</h4>
+                </div>
+            </div>
+            <div class="row location-content">
+                <div class="col-sm-6 location-images">
+                    <img src="./assets/images/rosemary.jpg" alt="Rosemary Flowers">
+                </div>
+                <div class="col-sm-6 click-to-map">
+                    <p>
+                        Rosemary Honey has a light and subtle flavour of rosemary, very delicate yet quite sweet with a soft floral note.
+                        This is a very light and pleasant herb flower honey, it has a creamy floral taste with a noticeable hint of rosemary in the flavour. It comes from the bees feeding on small flowers on osemary plant and is quite different from the tree honey which comes from sap. This honey tends to be very mild and subtle and sets quicker than others.
+                    </p>
+                    <div class="break">
+                        <br>
                     </div>
-                            <span>Click <a href="#map-position">here</a> to view location on map</span>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col">
-                            
-							<h1 class="main-headings">Locations</h1>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col map-content">
-                            <a id="map-position"></a>
-                            <div id="map"></div>
-                            
-						</div>
-
-                    
-
-					</div>
-                    <div class="row">
-                    <div class="col main-page-button">
+                    <span>Click <a href="#map-position">here</a> to view location on map</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="main-headings">Locations</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col map-content">
+                    <a id="map-position"></a>
+                    <div id="map"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col main-page-button">
                     <button onclick="Redirect()" id="honey-mix-button" class="stylish-button rounded-pill main-page-button-text">Click to go mix some Honey!</button>
-					</div>
-                    </div>
-                    </div>
-
-              <!-- ==================== Footer ==================== -->
-
-      <footer class="container-fluid mt-auto" id="footer-details">
-               
-               <div class="row">
-                  <div class="col-12 social-link-spacing">
-                     
-                        <ul class="list-inline social-links">
-                           <li class="list-inline-item">
-                              <a target="_blank" href="https://www.facebook.com/">
-                              <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                              <span class="sr-only">Facebook</span>
-                              </a>
-                           </li>
-                           <li class="list-inline-item">
-                              <a target="_blank" href="https://twitter.com/?lang=en">
-                              <i class="fab fa-twitter" aria-hidden="true"></i>
-                              <span class="sr-only">Twitter</span>
-                              </a>
-                           </li>
-                           <li class="list-inline-item">
-                              <a target="_blank" href="https://ie.linkedin.com/">
-                              <i class="fab fa-linkedin" aria-hidden="true"></i>
-                              <span class="sr-only">LinkedIn</span>
-                              </a>
-                           </li>
-                           <li class="list-inline-item">
-                              <a target="_blank" href="https://www.pinterest.com/">
-                              <i class="fab fa-pinterest" aria-hidden="true"></i>
-                              <span class="sr-only">Pinterest</span>
-                              </a>
-                           </li>
-                           <li class="list-inline-item">
-                              <a target="_blank" href="https://www.instagram.com/?hl=en">
-                              <i class="fab fa-instagram" aria-hidden="true"></i>
-                              <span class="sr-only">Instagram</span>
-                              </a>
-                           </li>
-                           <li class="list-inline-item">
-                              <a target="_blank" href="https://www.youtube.com/">
-                              <i class="fab fa-youtube" aria-hidden="true"></i>
-                              <span class="sr-only">YouTube</span>
-                              </a>
-                           </li>
-                        </ul>
-                    
-               
+                </div>
             </div>
-         </div>
-      </footer>
+        </div>
 
+        <!-- ==================== Footer ==================== -->
 
-              <!-- ==================== Modal ==================== -->
-
-      <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
-         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-specific">
-               <div class="modal-header">
-                  <h5 class="modal-title">Enter email to keep up to date on our Bees!</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-               </div>
-               <div class="modal-body">
-                  <form>
-                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                     </div>
-                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-success">Submit</button>
-                     </div>
-                  </form>
-               </div>
+        <footer class="container-fluid mt-auto" id="footer-details">
+            <div class="row">
+                <div class="col-12 social-link-spacing">
+                    <ul class="list-inline social-links">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://twitter.com/?lang=en">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://ie.linkedin.com/">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.pinterest.com/">
+                            <i class="fab fa-pinterest" aria-hidden="true"></i>
+                            <span class="sr-only">Pinterest</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.instagram.com/?hl=en">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.youtube.com/">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-         </div>
-      </div>
+        </footer>
 
-    <script
-				src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-			</script>
-			<script async defer
-				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABucIRm-f4cvB9n5a7-wE_1aVqEKh1k_0&callback=initMap">
-			</script>
-			<script src="assets/js/maps.js"></script>
-			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-				integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-				crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-				integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-				crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-				integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-				crossorigin="anonymous"></script>
-            <script src="assets/js/main.js"></script>
+        <!-- ==================== Modal ==================== -->
+
+        <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-specific">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Enter email to keep up to date on our Bees!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-success rounded-pill">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABucIRm-f4cvB9n5a7-wE_1aVqEKh1k_0&callback=initMap"></script>
+        <script src="assets/js/maps.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
         
-
-</body>
-
+    </body>
 </html>
