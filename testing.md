@@ -1,6 +1,7 @@
 ## Testing
 
 For testing I examined the common structures to all pages across all pages and then examined the rest of each page individually. 
+Responsivness was adjusted using Media Queries up to 1980px and down to 320px in widths.
 The following are the tests that I conducted:
 
 ### Navbar (from Home Page)
