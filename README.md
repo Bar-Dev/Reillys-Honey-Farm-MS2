@@ -13,7 +13,7 @@ Reillys Honey Farm website aims to provide customers with knowledge about where 
 coming from, what flowers provide different tastes, locations of the different hives and test 
 their general knowledge on bees as some light hearted fun. 
 
-The website can be viewed on Desktop, Tablet and Mobile devices. Click <a href="#">here</a> to view.
+The website can be viewed on Desktop, Tablet and Mobile devices. Click <a href="https://bar-dev.github.io/Reillys-Honey-Farm-MS2">here</a> to view.
 
 
 ## Table of Contents
@@ -158,7 +158,7 @@ Links to the mockups can be found [here](https://www.figma.com/file/B83dqKY1SnY7
 proposal for each page. I tried my best to adhere to the inital proposal only changing things if seen as an additional improvement to the overall
 website.
 
-If you cannot access the mockups via the link above you can view them [here](https://github.com/Bar-Dev//workspace/Reillys-Honey-Farm-MS2/documentation/wireframes)
+If you cannot access the mockups via the link above you can view them [here](https://github.com/Bar-Dev/Reillys-Honey-Farm-MS2/tree/master/documentation/wireframes)
 
 
 ## 2. Features

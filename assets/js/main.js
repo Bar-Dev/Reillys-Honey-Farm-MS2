@@ -151,7 +151,12 @@ function Redirect() {
 // Honey Quiz
 
 function check() {
-
+    let verifyHoney;
+    verifyHoney = Number(document.getElementById("listTotal").innerHTML);
+    if (verifyHoney !== 100) {
+        swal("Please change Honey back to 100% to proceed!");
+        document.getElementById("number_correct").style.visibility = "hidden";
+    } else if (verifyHoney === 100) {
     var question1 = document.quiz.question1.value;
     var question2 = document.quiz.question2.value;
     var question3 = document.quiz.question3.value;
@@ -159,6 +164,10 @@ function check() {
 
     //Sets the result to zero at the beginning of the quiz
     var correct = 0;
+    
+    //Reveals result
+    document.getElementById("number_correct").style.visibility = "visible";
+    document.getElementById("number_correct").innerHTML = "You got " + correct + " correct out of 4.";
 
     //Increases user result by one point if correct answer is selected
     if (question1 == "Mar-Sep") {
@@ -192,12 +201,8 @@ function check() {
             type: "success"
         }).then(function () {
             window.location = "index.html";
-        });
+        });}
     }
-
-    //Reveals results
-    document.getElementById("after_submit").style.visibility = "visible";
-    document.getElementById("number_correct").innerHTML = "You got " + correct + " correct out of 4.";
 }
 
 // Each question continues on to next
@@ -209,7 +214,7 @@ function startQuiz() {
         swal("Please select 100% of Honey first");
     } else if (verifyHoney === 100) {
         document.getElementById("startButton").style.display = "none";
-        document.getElementById("fullReset").style.visibility = "hidden";
+        //document.getElementById("fullReset").style.visibility = "hidden";
         document.getElementById("questionOne").innerHTML =
             `<div class="quizspan">
                         <p class="question">1. When are bee's most active?</p>
@@ -223,9 +228,15 @@ function startQuiz() {
     }
 };
 
+
 function quizNextOne() {
+    let verifyHoney;
+    verifyHoney = Number(document.getElementById("listTotal").innerHTML);
+    if (verifyHoney !== 100) {
+        swal("Please change Honey back to 100% to proceed!");
+    } else if (verifyHoney === 100) {
     document.getElementById("quiz-next-one").style.display = "none";
-    document.getElementById("fullReset").style.visibility = "hidden";
+    //document.getElementById("fullReset").style.visibility = "hidden";
     document.getElementById("questionOne").style.display = "none";
     document.getElementById("questionTwo").innerHTML =
         `<div class="quizspan">
@@ -236,11 +247,17 @@ function quizNextOne() {
                      <div class="quiz-nextOne">
 											<button type="button" class="stylish-button" onclick="quizNextTwo()" id="quiz-next-two" class="btn btn-default">Next</button>
                                         </div>`;
+                                    }
 };
 
 function quizNextTwo() {
+    let verifyHoney;
+    verifyHoney = Number(document.getElementById("listTotal").innerHTML);
+    if (verifyHoney !== 100) {
+        swal("Please change Honey back to 100% to proceed!");
+    } else if (verifyHoney === 100) {
     document.getElementById("quiz-next-two").style.display = "none";
-    document.getElementById("fullReset").style.visibility = "hidden";
+    //document.getElementById("fullReset").style.visibility = "hidden";
     document.getElementById("questionTwo").style.display = "none";
     document.getElementById("questionThree").innerHTML =
         `<div class="quizspan">
@@ -250,12 +267,18 @@ function quizNextTwo() {
                      </div>
                      <div class="quiz-nextTwo">
 											<button type="button" class="stylish-button" onclick="quizNextThree()" id="quiz-next-three" class="btn btn-default">Next</button>
-										</div>`;
+                                        </div>`;
+                                    }
 };
 
 function quizNextThree() {
+    let verifyHoney;
+    verifyHoney = Number(document.getElementById("listTotal").innerHTML);
+    if (verifyHoney !== 100) {
+        swal("Please change Honey back to 100% to proceed!");
+    } else if (verifyHoney === 100) {
     document.getElementById("quiz-next-three").style.display = "none";
-    document.getElementById("fullReset").style.visibility = "visible";
+    //document.getElementById("fullReset").style.visibility = "visible";
     document.getElementById("questionThree").style.display = "none";
     document.getElementById("questionFour").innerHTML =
         `<div class="quizspan">
@@ -264,6 +287,7 @@ function quizNextThree() {
                         <input type="radio" id="mc8" name="question4" value="1,500" class="answer">1,500<br>
                      </div>
                      <input type="button" id="button" class="stylish-button" value="Results" onclick= "check()" class="btn btn-info">`;
+    }
 };
 
 
