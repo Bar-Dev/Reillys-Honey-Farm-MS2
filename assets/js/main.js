@@ -170,9 +170,15 @@ function check() {
     if (question4 == "1,500") {
         correct++;
     }
-
+    // Notification of result
     if (correct < 4) {
-        document.getElementById("fullReset").innerHTML = `<button onclick="quizReset()" value="Reset" class="stylish-button">Try Again</button>`;
+        swal({
+            title: "Ooops!!",
+            text: "No discount this time, Please proceed to Checkout!",
+            type: "fail"
+        }).then(function () {
+            window.location = "index.html";
+        });
     } else if (correct === 4) {
         swal({
             title: "Well Done!",
@@ -187,21 +193,6 @@ function check() {
     document.getElementById("after_submit").style.visibility = "visible";
     document.getElementById("number_correct").innerHTML = "You got " + correct + " correct out of 4.";
 }
-
-//Refreshes the page so the user can start again with the score resetting to zero
-function quizReset() {
-    document.getElementById("startButton").innerHTML =
-            `<div class="quizspan">
-                        <p class="question">1. When are bee's most active?</p>
-                        <input type="radio" id="mc1" name="question1" value="Mar-Sep" class="answer">Mar-Sep</input><br>
-                        <input type="radio" id="mc2" name="question1" value="Sep-Mar" class="answer">Sep-Mar</input><br>
-                     </div>
-                     <div class="quiz-next">
-											<button type="button" class="stylish-button" onclick="quizNextOne()" id="quiz-next-one" class="btn btn-default">Next</button>
-                                        </div>`;
-    console.log("correct");
-}
-
 
 // Each question continues on to next
 
@@ -222,6 +213,7 @@ function startQuiz() {
                      <div class="quiz-next">
 											<button type="button" class="stylish-button" onclick="quizNextOne()" id="quiz-next-one" class="btn btn-default">Next</button>
                                         </div>`;
+                                        
     }
 };
 
@@ -237,7 +229,7 @@ function quizNextOne() {
                      </div>
                      <div class="quiz-nextOne">
 											<button type="button" class="stylish-button" onclick="quizNextTwo()" id="quiz-next-two" class="btn btn-default">Next</button>
-										</div>`;
+                                        </div>`;
 };
 
 function quizNextTwo() {
