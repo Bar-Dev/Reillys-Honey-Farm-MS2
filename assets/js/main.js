@@ -71,6 +71,7 @@ function fillJar() {
     } 
 };
 
+// Dungarvan Honey Fill
 
 function fillListOne() {
     document.getElementById("dungarvan").innerHTML = hiveOne;
@@ -88,6 +89,8 @@ function fillListOne() {
 
 };
 
+// Cappagh Honey Fill
+
 function fillListTwo() {
     document.getElementById("cappagh").innerHTML = hiveTwo;
     let totalArray = [0, 0, 0];
@@ -102,6 +105,8 @@ function fillListTwo() {
     console.log(totalHoney);
     fillJar();
 };
+
+// Modelligo Honey Fill
 
 function fillListThree() {
     document.getElementById("modelligo").innerHTML = hiveThree;
@@ -118,7 +123,7 @@ function fillListThree() {
     fillJar();
 };
 
-
+// Check when any change in percentage and fill the jar appropiately 
 
 document.addEventListener("DOMContentLoaded", function () {
     hiveOne = 0;
@@ -143,6 +148,7 @@ function Redirect() {
     window.location = "honey.html";
 };
 
+// Honey Quiz
 
 function check() {
 

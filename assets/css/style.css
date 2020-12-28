@@ -827,6 +827,30 @@ footer {
     }
 }
 
+@media(max-width: 531px) {
+    #inner-jar {
+    width: 80%;
+    }       
+    .hive-fills h2 {
+    font-size: 18px;
+    }
+    #outer-jar {
+    width: 80%;
+    }
+    #honey {
+    width: 80%;
+    }
+}
+
+/* ---- Break Six ---- */
+@media(max-width: 506px) { 
+    .navbar > a > h1 {
+    margin-left: 25vw;
+    transform: translate(-12%);
+    font-size: 25px;
+    }
+}
+
 /* ---- Break Six ---- */
 @media(max-width: 414px) {
     .bee-nav img {
@@ -879,20 +903,8 @@ footer {
     .location-content p, .location-content span  {
     padding: 0px 20px 0px 20px;
     }
-    #outer-jar {
-    width: 90%;
-    padding: 40px 0px 0px 10px;
-    }
-    #inner-jar {
-    width: 90%;
-    padding: 40px 0px 0px 10px;
-    }
-    #honey {
-    width: 90%;
-    padding: 40px 0px 0px 10px;
-    }
     .hive-content-padding {
-    padding: 40px 5px 0px 0px;
+    padding: 40px 20px 0px 0px;
     text-align: center;
     }
     .honey-text {
@@ -919,4 +931,54 @@ footer {
 }
 }
 
+@media(max-width: 375px) {
+    #inner-jar {
+    width: 90%;
+    padding: 40px 10px 0px 30px;
+    }       
+    #outer-jar {
+    width: 90%;
+    padding: 40px 10px 0px 30px;
+    }
+    #honey {
+    width: 90%;
+    padding: 40px 10px 0px 30px;
+    }
+    .bee-nav img {
+    top: -5px;
+}
+}
+
+@media(max-width: 320px) {
+    #inner-jar {
+    width: 100%;
+    padding: 40px 20px 0px 10px;
+    }       
+    #outer-jar {
+    width: 100%;
+    padding: 40px 20px 0px 10px;
+    }
+    #honey {
+    width: 100%;
+    padding: 40px 20px 0px 10px;
+    }
+    .navbar-brand {
+    margin-right: 0rem;
+    }
+    .navbar > a > h1 {
+    margin-left: 25vw;
+    }
+    .social-links li a i {
+    width: 35px;
+    height: 35px;
+    padding: 5px 0;
+    font-size: 25px;
+    }
+    .list-inline-item {
+    padding: 0px 0px;
+    }
+    .hive-fills h2 {
+    font-size: 15px;
+    }
+}
 

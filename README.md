@@ -241,7 +241,7 @@ for purchasing of the Honey.
 * [Bootstrap](https://getbootstrap.com/) - used for responsive grid system, styling and modals.
 * [FontAwseome](https://fontawesome.com/) - used for all icons on the site.
 * [Google Fonts](https://fonts.google.com/) - used for the Pacifico fonts.
-* [Favicon.io](https://favicon.io/) - used for creating a favicon.
+* [Favicon.io](https://favicon.io/) - used for displaying a favicon.
 
 ### Tools
 
@@ -322,10 +322,12 @@ All content in this web app was written by me or code that was altered or acknow
 
 #### I received advice and encouragement from
    * Seun Owonikoko (Mentor)
+   * Oluwafemi Medale (Substitute Mentor)
    * JimLynx (Slack Webinars and Forum help)
-   * Kamil Zok (Slack Forum help)
+   * Tim Nelson (Slack Code Institute)
    * Anthony (Slack Forum Help)
    * Laimo (Slack Forum Help)
+   * Bim Williams (Slack Forum Help)
 
 
 ## 7. Disclaimer: 
